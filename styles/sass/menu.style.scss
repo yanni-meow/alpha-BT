@@ -1,0 +1,128 @@
+@import 'nullstyle.scss';
+@import 'fonts.scss';
+@import 'main.media.scss';
+
+.menu {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgb(238, 238, 238);
+
+    a {
+        color: #313131;
+        &:active {
+            color: $orange;
+        }
+    }
+
+    &__logo {
+        max-height: 45px;
+        padding: 0 30px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        li a {
+            &:hover {
+                color: $orange;
+            }
+        }
+    
+        > li {
+            flex: 1;
+            text-align: center;
+            position: relative;
+    
+            padding: 20px 20px;
+            transition: all 0.15s ease-out 0s;
+            cursor: pointer;
+        }
+        
+    }
+}
+
+.sub-menu__list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    width: max-content;
+    height: 0px;
+    overflow: hidden;
+    z-index: 5;
+    box-shadow: 0 3px 4px rgb(207, 207, 207);
+
+    line-height: 1.5;
+    margin: -500px 0 0 -1.6rem;
+
+    transition: all 0.4s ease-out 0s;
+    
+    li {
+        text-align: left;
+        z-index: 5;
+        background: #fff;
+        padding: 10px 25px;
+    }
+}
+
+.open {
+    height: max-content;    
+    margin: 1.4rem 0 0 -1.6rem;
+}
+
+
+#nav-btn {
+    background: $orange;
+    max-height: 85%;
+    min-width: 170px;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        color: #fff !important;
+        span {
+            // color: #fff !important;
+        }
+        img {
+            max-height: 22px;
+        }
+    }
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    padding: 10px 32px;
+    font-size: 13px;
+
+    a {
+        margin: 2px 0;
+        &:first-child {
+        color: $orange;
+        }
+    }
+}
+
+
+.btn__link {
+    color: #fff;
+    background: linear-gradient(to top, rgb(252, 76, 2), rgb(252, 117, 38));
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 3px;
+    animation: 0.3s cubic-bezier(0, 0.87, 0.71, 1.24) 0.3s 1 normal forwards running;
+    max-width: 132px;
+}

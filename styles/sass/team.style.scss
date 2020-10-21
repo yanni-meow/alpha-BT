@@ -1,0 +1,61 @@
+@import 'menu.style.scss';
+
+h2 {
+    font-size: 48px;
+    transition: all 0.3s ease-out 0s;
+
+    //opacity: 0;
+    //transform: translateY(-100px);
+
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+h6 {
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+h5 {
+    margin-top: 35px;
+    transition: all 0.3s ease-out 0.1s;
+    // opacity: 0;
+    // transform: translateY(-100px);
+
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15vh 0;
+}
+
+.team__photo {
+    width: 45vw;
+    height: 80vh;
+    img {
+        max-width: 100%;
+        align-self: baseline;
+    }
+    &:last-child {
+        padding-bottom: 100vh;
+    }
+}
+
+.team__name {
+    width: 45vw;
+    
+    &:nth-child(odd) {
+        text-align: left;
+    }
+    &:nth-child(even) {
+        text-align: right;
+    }
+   
+}

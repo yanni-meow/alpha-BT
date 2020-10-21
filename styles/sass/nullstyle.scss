@@ -1,4 +1,5 @@
-/*Обнуление*/
+// Обнуление
+
 *{padding: 0;margin: 0;border: 0;}
 *,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
 :focus,:active{outline: none;}
@@ -14,4 +15,42 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
-/*--------------------*/
+
+// Дефолтные стили
+
+$orange: rgb(252, 76, 2);
+$textColor: rgb(49, 49, 49);
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: rgb(49, 49, 49);
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $orange;
+}
+
+h5 {
+    font-size: 36px;
+    color: $orange;
+}
+
+h6 {
+    font-weight: 300;
+    line-height: 1.4;
+    color: $textColor;
+    font-size: 18px;
+}
+
+p {
+    line-height: 1.4;
+    text-align: justify;
+    font-size: 24px;
+    font-weight: 100;
+} 
+

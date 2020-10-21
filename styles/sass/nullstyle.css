@@ -1,5 +1,3 @@
-@charset "UTF-8";
-/*Обнуление*/
 * {
   padding: 0;
   margin: 0;
@@ -72,5 +70,36 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-/*--------------------*/
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #313131;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fc4c02;
+}
+
+h5 {
+  font-size: 36px;
+  color: #fc4c02;
+}
+
+h6 {
+  font-weight: 300;
+  line-height: 1.4;
+  color: #313131;
+  font-size: 18px;
+}
+
+p {
+  line-height: 1.4;
+  text-align: justify;
+  font-size: 24px;
+  font-weight: 100;
+}
 /*# sourceMappingURL=nullstyle.css.map */
