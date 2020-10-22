@@ -96,6 +96,13 @@ h6 {
   font-size: 18px;
 }
 
+p {
+  line-height: 1.4;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 100;
+}
+
 @font-face {
   font-family: 'Roboto', sans-serif;
   src: url(../fonts/Roboto-Bold.ttf);
@@ -156,7 +163,7 @@ h6 {
 
 .menu__logo {
   max-height: 45px;
-  padding: 5px 30px;
+  padding: 0 30px;
 }
 
 .menu__list {
@@ -193,6 +200,7 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
+  background: #fff;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -238,9 +246,6 @@ h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 15px;
-}
-
-#nav-btn a span {
   color: #fff !important;
 }
 
@@ -259,7 +264,7 @@ h6 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 10px 32px;
+  padding: 10px 35px 10px 15px;
   font-size: 13px;
 }
 
@@ -297,7 +302,11 @@ h6 {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 10vh;
+  padding: 5vh 7vw;
+}
+
+.about-us {
+  height: 30vh;
 }
 
 h2 {
@@ -309,8 +318,12 @@ h2 {
 p {
   line-height: 1.4;
   text-align: justify;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 100;
+}
+
+.contacts {
+  height: 65vh;
 }
 
 .contacts__box {
@@ -339,6 +352,10 @@ p {
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 1vh;
+}
+
+.customers {
+  height: 90vh;
 }
 
 .customers__box {

@@ -1,0 +1,297 @@
+@import 'menu.style.scss';
+
+.container {
+    background: rgb(243, 243, 243);
+}
+
+h2 {
+    text-align: center;
+    color: $textColor;
+    font-weight: 500;
+    margin-bottom: 1vh;
+}
+
+.web-const-1 {
+    height: 100vh;
+    background: url(../../images/web-consultant/slyde-1.png) no-repeat bottom;
+    background-size: contain;
+
+    &__content {
+        height: fit-content;
+        padding: 20vh 20vw;
+        h2 {
+            text-align: left;
+        }
+        p {
+            text-align: left;
+            width: 35vw;
+        }
+    }
+}
+.web-const-2 {
+    height: 100vh;
+    padding: 10vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__top {
+        margin: 5vh 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            max-width: 30vw;
+        }
+
+        ul {
+            max-width: 60vw;
+            li {
+                font-size: 16px;
+                line-height: 1.2;
+                margin: 10px 0px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    margin-right: 2vw;
+                    border-radius: 50%;
+                    top: .5vh;
+                    left: -25px;
+                    width: 7px;
+                    height: 7px;
+                    background-color: $orange;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        margin: 5vh 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__item {
+            width: 13vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img {
+            }
+
+            p {
+                font-size: 15px;
+                margin: 2vh 1vw;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.web-const-3 {
+    height: 100vh;
+    padding: 10vh 5vw;
+    position: relative;
+    background: url(../../images/web-consultant/capabilities.jpg) center no-repeat;
+
+    p{
+        max-width: 40vw;
+        margin: 0 auto;
+        padding: 2vh 1vw;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    &__content {
+
+    }
+
+    &__item-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 20vw;
+        width: 20vw;
+        position: absolute;
+        border-radius: 50%;
+
+        &:first-child {
+            left: 8vw;
+            top: 25vh;
+            background: linear-gradient(to right, rgb(255, 255, 255), transparent);
+
+        }
+        &:nth-child(2) {
+            left: 50%;
+            transform: translateX(-50%);
+            top: 45vh;
+        }
+        &:last-child {
+            right: 8vw;
+            top: 25vh;
+            background: linear-gradient(to right, rgb(255, 255, 255), transparent);
+        }
+        img {
+            max-width: 100%;
+        }
+        p {
+            width: 100%;
+        }
+    }
+}
+
+.web-const-4 {
+    height: 100vh;
+    padding: 5vh 5vw;
+
+    &__top {
+        height: 55vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            margin: 0 2vw;
+        }
+
+        &__box {
+            h2 {
+                text-align: left;
+            }
+            h6 {
+                font-size: 20px;
+                margin: 1.5vh 0;
+            }
+            ul {
+                font-size: 15px;
+                line-height: 1.4;
+                li {
+                    margin: 1vh 2vw;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        margin-right: 2vw;
+                        border-radius: 50%;
+                        top: .7vh;
+                        left: -25px;
+                        width: 7px;
+                        height: 7px;
+                        background-color: $orange;
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        height: 35vh;
+        width: 100vw;
+        margin-left: -5vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: linear-gradient(to right, rgb(29, 42, 62), rgb(199, 202, 206));
+        color: #fff;
+        &__left, 
+        &__right {
+            display: flex;
+            align-items: center;
+            width: 45vw;
+            padding: 1vh 2vw;
+            img {
+                max-width: 90px;
+                max-height: 90px;
+                margin-right: 2vw;
+            }
+            h5 {
+                color: #fff;
+                font-size: 20px;
+                margin: 1vh;
+            }
+            p {
+                display: inline-block;
+                font-size: 16px;
+                margin: 1vh;
+            }
+        }
+
+    }
+}
+
+.web-const-5 {
+    height: 100vh;
+    padding: 7vh 5vw;
+    
+    &__content {
+        display: flex;
+        img {
+            max-width: 18vw;
+        }
+        &__text {
+            margin: 2vh 2vw;
+            p {
+                font-size: 16px;
+                margin: 3vh 1vw 2vh;
+            }
+            ul {
+                height: 40vh;
+                font-size: 16px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                li {
+                    position: relative;
+                    margin-left: 3vw;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        margin-right: 2vw;
+                        border-radius: 50%;
+                        top: .7vh;
+                        left: -25px;
+                        width: 7px;
+                        height: 7px;
+                        background-color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.web-const-6 {
+    height: 95vh;
+    padding: 5vh 5vw;
+    background: url(../../images/web-consultant/services.png) right no-repeat;
+    background-size: cover;
+    &__content {
+        height: 85vh;
+        padding: 5vh 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            width: 100vw;
+            padding-bottom: 5vh;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        width: 26vw;
+        padding: 1vh 1vw;
+        p {
+            font-size: 18px;
+            text-align: left;
+        }
+    }
+}

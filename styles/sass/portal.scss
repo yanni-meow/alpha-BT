@@ -37,6 +37,7 @@ p {
         }
     
         p {
+            text-align: left;
             span {
                 color: $orange;
                 font-weight: 500;
@@ -45,7 +46,7 @@ p {
         }
     
         ul {
-            margin: 3vh 0;
+            margin: 3vh 3vw;
             li {
                 font-size: 18px;
                 line-height: 1.4;
@@ -55,9 +56,10 @@ p {
 
                 &::before {
                     content: '';
+                    position: absolute;
                     margin-right: 2vw;
                     border-radius: 50%;
-                    top: 4px;
+                    top: .7vh;
                     left: -25px;
                     width: 10px;
                     height: 10px;
@@ -109,14 +111,58 @@ p {
 
     &__bottom {
         display: flex;
+
         img {
             height: 65vh;
             width: auto;
+            margin-left: -3vw;
         }
-        &__box {
 
+        &__box {
+            width: 77vw;
+            display: inline-grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(2, 28vh);
+            grid-template-areas:
+                "one one six two three four"
+                "five seven six two three eight";
         }
+
         &__item {
+            display: flex;
+            align-items: center;
+            margin: 2px;
+            &:first-child {grid-area: one; background: rgb(230, 242, 179);}
+            &:nth-child(2) {grid-area: two; background: rgb(255, 228, 188);}
+            &:nth-child(3) {grid-area: three; background: rgb(216, 220, 255);}
+            &:nth-child(4) {grid-area: four; background: rgb(245, 245, 245);}
+            &:nth-child(5) {grid-area: five; background: rgb(200, 245, 223);}
+            &:nth-child(6) {grid-area: six; background: rgb(239, 245, 255);}
+            &:nth-child(7) {grid-area: seven; background: rgb(251, 236, 234);}
+            &:nth-child(8) {grid-area: eight; background: rgb(255, 236, 236);}
+
+            h6 {
+                font-size: 15px;
+                font-weight: 400;
+                margin: 0 auto;
+                text-align: center;
+                text-transform: uppercase;
+                padding: 3px;
+                // display: none;
+            }
+            p {
+                height: 100%;
+                width: 100%;
+                color: #fff;
+                background-color: $textColor;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                text-align: center;
+                padding: 3px;
+                margin: 0;
+                display: none;
+            }
         }
     }
 }
@@ -135,9 +181,11 @@ p {
         width: 50vw;
         height: 40vw;
         margin-left: 40vw;
+
         h2 {
             color: $textColor;
         }
+
         p {
             text-align: center;
             width: 40vw;
@@ -198,6 +246,7 @@ p {
     &__middle {
         width: 46vw;
         img {
+            clip-path: url(#clipControlArea);
             width: 100%;
         }
     }
@@ -221,7 +270,8 @@ p {
 
     &__left {
         width: 60vw;
-        padding: 0 5vw;
+        height: 90vh;
+        padding: 0 3vw;
         h2 {
             color: $textColor;
             span {
@@ -238,7 +288,7 @@ p {
             }
 
             p {
-                margin: 1vh 1vw;
+                margin: .5vh .5vw;
                 &:first-child {
                     width: 40%;
                     text-align: left;
@@ -256,6 +306,10 @@ p {
         width: fit-content;
         display: flex;
         justify-content: flex-end;
-        height: 85vh;
+        max-height: 85vh;
+        max-width: 30vw;
+        img {
+            max-width: 110%;
+        }
     }
 }

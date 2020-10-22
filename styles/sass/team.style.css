@@ -200,6 +200,7 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
+  background: #fff;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -263,7 +264,7 @@ p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 10px 32px;
+  padding: 10px 35px 10px 15px;
   font-size: 13px;
 }
 

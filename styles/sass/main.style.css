@@ -200,6 +200,7 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
+  background: #fff;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -263,7 +264,7 @@ p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 10px 32px;
+  padding: 10px 35px 10px 15px;
   font-size: 13px;
 }
 
@@ -290,7 +291,7 @@ p {
 
 .main {
   height: 100vh;
-  background: url(../../images/index/main.jpg) no-repeat right;
+  background: url(../../images/index/main.jpg) no-repeat 45vw;
   background-size: auto 90%;
   position: relative;
 }
@@ -315,9 +316,11 @@ p {
   z-index: 1;
   background: #fc4c02;
   color: #fff;
-  width: 630px;
-  height: 130px;
-  font-size: 26px;
+  width: 50vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 2vw;
   text-transform: uppercase;
   line-height: 1.6;
   padding: 25px 0;
@@ -521,7 +524,7 @@ p {
 }
 
 .slyde-6__item {
-  width: 30vw;
+  width: 32vw;
   height: 45vh;
   padding: 30px 10px;
 }

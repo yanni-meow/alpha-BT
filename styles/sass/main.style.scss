@@ -3,7 +3,7 @@
 
 .main {
     height: 100vh;
-    background: url(../../images/index/main.jpg) no-repeat right;
+    background: url(../../images/index/main.jpg) no-repeat 45vw;
     background-size: auto 90%;
 
     position: relative;
@@ -29,14 +29,17 @@
     
         background: $orange;
         color: #fff;
-        width: 630px;
-        height: 130px;
-        font-size: 26px;
+        width: 50vw;
+        height: fit-content;
+        font-size: 2vw;
         text-transform: uppercase;
         line-height: 1.6;
         padding: 25px 0;
     }
 }
+
+
+
 
 .main__logo._active {
     top: 100px;
@@ -199,7 +202,7 @@
     align-items: center;
 
     &__item {
-        width: 30vw;
+        width: 32vw;
         height: 45vh;
         padding: 30px 10px;
 

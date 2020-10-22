@@ -5,7 +5,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 10vh;
+    padding: 5vh 7vw;
+}
+
+.about-us {
+    height: 30vh;
 }
 
 h2 {
@@ -17,37 +21,44 @@ h2 {
 p {
     line-height: 1.4;
     text-align: justify;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 100;
 } 
 
-.contacts__box {
-    display: flex;
-    div {
-        width: 40vw;
-        height: 40vh;
+.contacts {
+    height: 65vh;
+    &__box {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 1.5vw;
-        p {
-            font-size: 18px;
-            font-weight: 300;
-            margin-bottom: 1vh;
+        div {
+            width: 40vw;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 1.5vw;
+            p {
+                font-size: 18px;
+                font-weight: 300;
+                margin-bottom: 1vh;
+            }
         }
     }
 }
 
-.customers__box {
-    width: 90vw;
-    min-height: 65vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    img {
-        height: 10vh;
-        width: 13vw;
-        margin: 10px;
+.customers {
+    height: 90vh;
+
+    &__box {
+        width: 90vw;
+        min-height: 65vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        img {
+            height: 10vh;
+            width: 13vw;
+            margin: 10px;
+        }
     }
 }
