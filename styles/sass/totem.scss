@@ -1,0 +1,49 @@
+@import 'menu.style.scss';
+
+.container {
+}
+
+p {
+    font-size: 14px !important;
+    position: relative;
+}
+
+
+.totem-1 {
+    height: 100vh;
+    width: 100vw;
+    padding: 15vh 5vw;
+    background: url(../../images/totem/header.jpg) right no-repeat;
+    background-size: 70%;
+
+    &__box {
+        margin-left: 5vw;
+        margin-top: 5vh;
+    }
+}
+
+.totem-2 {
+    height: 95vh;
+    width: 100vw;
+    padding: 15vh 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {max-height: 100vh;}
+
+    &__right {
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1vh 1vw;
+            &:nth-child(odd) {
+                background: linear-gradient(to right, #fff, rgb(255, 239, 239));
+            }
+        }
+    }
+}
+
+.slyder__right {
+    padding: 5vh 5vw 5vh 1vw;
+    h6 {margin-bottom: 2vh; text-align: right;}
+}

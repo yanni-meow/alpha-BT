@@ -1,5 +1,9 @@
-@import 'main.media.scss';
+@import 'media.scss';
 @import 'menu.style.scss';
+
+h6 {
+    font-size: 16px;
+}
 
 .main {
     height: 100vh;
@@ -9,7 +13,7 @@
     position: relative;
 
     &__logo {
-        position: absolute;
+        position: absolute; 
         transition: all 0.8s ease-out 0s;
         top: 100px;
         left: 0;
@@ -28,18 +32,13 @@
         z-index: 1;
     
         background: $orange;
-        color: #fff;
-        width: 50vw;
+        width: 55vw;
         height: fit-content;
         font-size: 2vw;
-        text-transform: uppercase;
         line-height: 1.6;
-        padding: 25px 0;
+        padding: 25px;
     }
 }
-
-
-
 
 .main__logo._active {
     top: 100px;
@@ -66,12 +65,6 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-around;
-
-        h2 {
-            transition: all 0.3s ease-out 0.1s;
-            padding: 0 0 15px 0;
-        }
-
         h6 {
             width: 35vw;
         }
@@ -101,15 +94,8 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-around;
-
-        h2 {
-            transition: all 0.3s ease-out 0.1s;
-            padding: 0 0 15px 0;
-        }
-
         h6 {
             width: 35vw;
-            color: #fff;
         }
     }
 }
@@ -139,17 +125,7 @@
         flex-direction: column;
         align-items: flex-end;
         justify-content: space-around;
-
-        h2 {
-            transition: all 0.3s ease-out 0.1s;
-            padding: 0 0 15px 0;
-            text-align: right;
-        }
-
-        h6 {
-            text-align: right;        
-            color: #fff;
-        }
+        text-align: right;
     }
 }
 
@@ -177,15 +153,6 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-around;
-    
-        h2 {
-            transition: all 0.3s ease-out 0.1s;
-            padding: 0 0 15px 0;
-        }
-    
-        h6 {
-            color: #fff;
-        }
     }
 }
 
@@ -206,12 +173,13 @@
         height: 45vh;
         padding: 30px 10px;
 
-        h2, h6 {
-            color: #fff; 
+        h1 {font-size: 28px;}
+        
+        h1, h4 {
             text-align: center;
             padding: 10px;
             z-index: 10;
-        }
+        }  
         
         &:first-child {background: url(../../images/index/slyde-6/blur2.png), url(../../images/index/slyde-6/1.jpg) center no-repeat; background-size: auto 100%;}
         &:nth-child(2) {background: url(../../images/index/slyde-6/blur2.png), url(../../images/index/slyde-6/2.jpg) center no-repeat; background-size: auto 100%;}

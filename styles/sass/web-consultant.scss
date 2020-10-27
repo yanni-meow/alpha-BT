@@ -4,12 +4,11 @@
     background: rgb(243, 243, 243);
 }
 
-h2 {
+h3 {
     text-align: center;
-    color: $textColor;
     font-weight: 500;
     margin-bottom: 1vh;
-}
+} 
 
 .web-const-1 {
     height: 100vh;
@@ -19,7 +18,7 @@ h2 {
     &__content {
         height: fit-content;
         padding: 20vh 20vw;
-        h2 {
+        h3 {
             text-align: left;
         }
         p {
@@ -36,7 +35,7 @@ h2 {
     justify-content: space-around;
 
     &__top {
-        margin: 5vh 0;
+        margin: 1vh 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -45,30 +44,18 @@ h2 {
         }
 
         ul {
-            max-width: 60vw;
+            max-width: 55vw;
             li {
                 font-size: 16px;
                 line-height: 1.2;
                 margin: 10px 0px;
                 position: relative;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    margin-right: 2vw;
-                    border-radius: 50%;
-                    top: .5vh;
-                    left: -25px;
-                    width: 7px;
-                    height: 7px;
-                    background-color: $orange;
-                }
             }
         }
     }
 
     &__bottom {
-        margin: 5vh 0;
+        margin: 1vh 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -84,11 +71,10 @@ h2 {
             }
 
             p {
-                font-size: 15px;
                 margin: 2vh 1vw;
                 text-align: center;
             }
-        }
+        } 
     }
 }
 
@@ -98,16 +84,14 @@ h2 {
     position: relative;
     background: url(../../images/web-consultant/capabilities.jpg) center no-repeat;
 
-    p{
+    p {
         max-width: 40vw;
         margin: 0 auto;
         padding: 2vh 1vw;
-        font-size: 15px;
         text-align: center;
     }
 
     &__content {
-
     }
 
     &__item-box {
@@ -124,7 +108,6 @@ h2 {
             left: 8vw;
             top: 25vh;
             background: linear-gradient(to right, rgb(255, 255, 255), transparent);
-
         }
         &:nth-child(2) {
             left: 50%;
@@ -136,12 +119,8 @@ h2 {
             top: 25vh;
             background: linear-gradient(to right, rgb(255, 255, 255), transparent);
         }
-        img {
-            max-width: 100%;
-        }
-        p {
-            width: 100%;
-        }
+        img { max-width: 100%;}
+        p { width: 100%;}
     }
 }
 
@@ -159,11 +138,10 @@ h2 {
         }
 
         &__box {
-            h2 {
+            h3 {
                 text-align: left;
             }
             h6 {
-                font-size: 20px;
                 margin: 1.5vh 0;
             }
             ul {
@@ -172,18 +150,6 @@ h2 {
                 li {
                     margin: 1vh 2vw;
                     position: relative;
-
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        margin-right: 2vw;
-                        border-radius: 50%;
-                        top: .7vh;
-                        left: -25px;
-                        width: 7px;
-                        height: 7px;
-                        background-color: $orange;
-                    }
                 }
             }
         }
@@ -209,15 +175,9 @@ h2 {
                 max-height: 90px;
                 margin-right: 2vw;
             }
-            h5 {
-                color: #fff;
-                font-size: 20px;
-                margin: 1vh;
-            }
             p {
                 display: inline-block;
-                font-size: 16px;
-                margin: 1vh;
+                margin: 1vh 0;
             }
         }
 
@@ -236,7 +196,6 @@ h2 {
         &__text {
             margin: 2vh 2vw;
             p {
-                font-size: 16px;
                 margin: 3vh 1vw 2vh;
             }
             ul {
@@ -289,9 +248,8 @@ h2 {
         align-items: center;
         width: 26vw;
         padding: 1vh 1vw;
-        p {
-            font-size: 18px;
-            text-align: left;
+        h6 {
+            margin-left: 1.5vw;
         }
     }
 }

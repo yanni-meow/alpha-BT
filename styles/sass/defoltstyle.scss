@@ -1,0 +1,212 @@
+@import 'nullstyle.scss';
+
+// Дефолтные стили
+
+$orange: rgb(252, 76, 2);
+$textColor: rgb(49, 49, 49);
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: rgb(49, 49, 49);
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: $orange;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    padding-bottom: 15px;    
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: $textColor;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    padding-bottom: 15px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+
+    letter-spacing: 1px;
+    line-height: 1.4;
+} 
+
+h5 {
+    font-size: 20px;
+    font-weight: 500;
+    color: $orange;
+
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 500;
+    color: $textColor;
+
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+p {
+    line-height: 1.4;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 1vh;
+} 
+
+
+.slyder {
+    height: 95vh;
+    width: 100vw;
+    padding: 13vh 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__top {
+        height: 20vh;
+        h6 {
+            font-size: 36px;
+            margin-bottom: 1vh;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        span {
+            color: $orange;
+        }
+    }
+
+    &__middle {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 40vh;
+        width: 100vw;
+        background: rgb(255, 245, 233);
+        p {
+            font-size: 18px;
+            text-align: left;
+        }
+        
+    }
+
+    &__left {
+        width: 30vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3vh 1vw 3vh 5vw;
+        font-size: 18px;
+
+        &__icon {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            div {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 3vw;
+                height: 3vw;
+                margin: 1vw;
+                border-radius: 50%;
+                background: $orange;
+                img {
+                    height: 50%;
+                }
+            }
+            p {
+                max-width: 19vw;
+                margin: 0;
+            }
+        }
+    }
+
+    &__center {
+        width: 40vw;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__right {
+        width: 30vw;
+        padding: 5vh;
+    }
+}
+
+
+.icon-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    div {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 3vw;
+        height: 3vw;
+        margin: 1vw;
+        border-radius: 50%;
+        background: $orange;
+        img {
+            height: 50%;
+        }
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.point-list {
+    &::before {
+        content: '';
+        position: absolute;
+        margin-right: 2vw;
+        border-radius: 50%;
+        top: .7vh;
+        left: -25px;
+        width: 8px;
+        height: 8px;
+        background-color: $orange;
+    }
+}
+
+._anim-show {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all .8s ease 0%;
+}
+
+.anim-show._active,
+._anim-show ._active {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}  

@@ -1,0 +1,252 @@
+@import 'menu.style.scss';
+
+.container {
+    padding-top: 5vh;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.new-video-1 {
+    height: 95vh;
+    width: 100vw;
+    padding: 18vh 5vw;
+    background: url(../../images/new-videoconsultant/header.jpg) 25% no-repeat;
+    background-size: cover;
+    h3 {
+        width: 40vw;
+        text-align: left;
+    }
+    p {
+        width: 40vw;
+        font-weight: 400;
+    }
+}
+
+.new-video-2 {
+    height: 100vh;
+    width: 100vw;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1vh;
+
+        img {
+            max-width: 270px;
+            margin: 0 5vw;
+        }
+        p {
+            position: relative;
+            max-width: 300px;
+            margin: .5vh 5vw;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1vh;
+
+        &__item {
+            width: 15vw;
+            padding: 1vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {margin-bottom: 2vh;}
+            p {
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+.new-video-3 {
+    height: 100vh;
+    width: 100vw;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__top {
+        width: 90vw;
+        p {
+            max-width: 690px;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__item {
+        width: 450px;
+        display: flex;
+        align-items: center;
+
+        &__text {
+            margin: 1vh 1vw;
+        }
+    }
+}
+
+
+.new-video-4 {
+    height: 100vh;
+    width: 100vw;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../../images/new-videoconsultant/bg3.png);
+    background-size: cover;
+    h3 {width: 90vw;}    
+
+    &__content {
+        width: 90vw;
+        margin: 5vh 0;
+        display: flex;
+        align-items: center;
+        // justify-content: space-around;
+    }
+
+    &__num {
+        position: absolute;
+        top: 50%;
+        left: -10%;
+        transform: translate(-50%, -50%);
+
+        font-size: 200px;
+        color: rgba(0, 0, 0, 0.2);
+    }
+
+    &__left,
+    &__right {
+        position: relative;
+        width: 35vw;
+        margin-left: 10vw;
+
+        p {
+            position: relative;
+            text-align: left;
+            margin: 1vh 2vw;
+        }
+    }
+
+    &__right {
+        width: 380px;
+    }
+
+    &__bottom {
+
+        p {
+            max-width: 550px;
+            text-align: center;
+        }
+    }
+}
+
+
+.new-video-5 {
+    height: 100vh;
+    width: 100vw;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__left {
+        width: 45vw;
+        margin-right: 5vw;
+        p {
+            position: relative;
+            text-align: left;
+            margin-bottom: 2vh;
+        }
+    }
+
+    &__right {
+        width: 35vw;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.point-list { margin-left: 2vw;}
+
+
+.new-video-6 {
+    height: 95vh;
+    width: 100vw;
+    // padding: 5vh 5vw;
+    
+    &__slyde {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        height: 95vh;
+        width: 100vw;
+        padding: 5vh 5vw;
+    }
+
+    &__content {
+        height: 60vh;
+        width: 55vw;
+        padding: 1vh 2vw;
+        overflow: auto;
+        scroll-behavior: smooth;
+        background: rgba(255, 255, 255, 0.5);
+        h6 {
+            margin-bottom: 1vh;
+        }
+    }
+
+    &__list {
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p {
+                width: fit-content;
+                max-width: 50%;
+                text-align: left;
+            }
+            span {
+                flex: 1 1 0%;
+                margin: 0 1vw;
+                border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+            }
+            .r {text-align: right;}
+        }
+    }
+}
+
+.slyde1 { background: url(../../images/new-videoconsultant/bg2.jpg) 27% no-repeat; background-size: cover;}
+.slyde2 { background: url(../../images/new-videoconsultant/bg3.jpg) 27% no-repeat; background-size: cover;}
+.slyde3 { background: url(../../images/new-videoconsultant/bg4.jpg) 27% no-repeat; background-size: cover;}

@@ -3,14 +3,16 @@
 .container {
 }
 
-h2 {
-    margin: 3vh 0;
+h3 {
+    margin: 1vh 0;
     text-align: center;
 }
 
-p {
-    font-size: 18px;
-    margin-bottom: 1vh;
+#arrow {
+    position: absolute;
+    top: calc(50% - 50px);
+    right: 10px;
+    max-width: 3vw;
 }
 
 .portal-1 {
@@ -20,20 +22,31 @@ p {
     height: 100vh;
     padding: 5vh 5vw;
 
+
     &__left {
+        position: relative;
         width: 55vw;
+        height: 100vh;
+        margin-left: -5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(rgba(196, 196, 196, 0.05) 0%, rgba(196, 196, 196, 0.65) 64.38%, rgba(196, 196, 196, 0.86) 68.42%, rgba(196, 196, 196, 0.49) 72.01%, rgba(196, 196, 196, 0.51) 100%);
         img {
-            width: 100%;
+            width: 95%;
         }
     }
 
     &__right {
-        width: 35vw;
-        margin-left: 3vw;
-        h5 {
+        width: 37vw;
+        margin-left: 5vw;
+        h6 {
+            font-size: 24px;
             font-weight: 300;
-            color: $textColor;
-            line-height: 1.3;
+        }
+        h2 {
+            text-align: left;
+            margin-top: 0;
         }
     
         p {
@@ -46,48 +59,18 @@ p {
         }
     
         ul {
-            margin: 3vh 3vw;
+            margin: 1vh 1vw;
             li {
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 1.4;
                 font-weight: 100;
                 margin-bottom: .5vh;
                 position: relative;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    margin-right: 2vw;
-                    border-radius: 50%;
-                    top: .7vh;
-                    left: -25px;
-                    width: 10px;
-                    height: 10px;
-                    background-color: $orange;
-                }
             }
         }
-    }
 
-    &__icon {
-        display: flex;
-        align-items: center;
-        margin: 1vh 0;
-        font-size: 18px;
-
-        div {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            margin-right: 1vw;
-            border-radius: 50%;
-            background: $orange;
-            
-            img {
-                width: 50%;
-            }
+        &__box {
+            margin-left: -2vw;
         }
     }
 }
@@ -98,9 +81,6 @@ p {
 
     &__top {
         margin: 5vh 0;
-        h2 {
-            color: $textColor;
-        }
         p {
             max-width: 700px;
             margin: 0 auto;
@@ -182,10 +162,6 @@ p {
         height: 40vw;
         margin-left: 40vw;
 
-        h2 {
-            color: $textColor;
-        }
-
         p {
             text-align: center;
             width: 40vw;
@@ -226,12 +202,6 @@ p {
     &__top {
         text-align: center;
         width: 100%;
-        h2 {
-            color: $textColor;
-        }
-        h6 {
-            font-weight: 500;
-        }
     }
 
     &__left {
@@ -261,8 +231,16 @@ p {
     }
 }
 
+#qr {}
+#printer {}
+#secMonitor {}
+#sensBtn {}
+#cameraHD {}
+#payPass {}
+#photoScan {}
+
 .portal-5 {
-    height: 100vh;
+    height: 95vh;
     padding: 5vh 5vw;
     display: flex;
     align-items: center;
@@ -270,10 +248,9 @@ p {
 
     &__left {
         width: 60vw;
-        height: 90vh;
+        height: fit-content;
         padding: 0 3vw;
-        h2 {
-            color: $textColor;
+        h3 {
             span {
                 color: $orange;
             }

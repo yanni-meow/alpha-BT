@@ -1,0 +1,92 @@
+@import 'menu.style.scss';
+
+.container {
+}
+h2 {text-align: center;}
+
+h3 {
+    max-width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1vh;
+    span {
+        color: $orange;
+    }
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 2vh;
+    text-align: left;
+}
+
+.alpha-vd-1 {
+    height: 100vh;
+    padding: 15vh 5vw;
+    background: url(../../images/alpha-vd/header.jpg) center bottom;
+    background-size: cover;
+}
+
+.alpha-vd-2 {
+    height: 100vh;
+    padding: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        position: relative;
+        transition: all 0.3s ease-out 0s;
+    
+        width: 170px;
+        height: 260px;
+        margin: 12px;
+        padding: 12px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px, rgba(0, 0, 0, 0.1) 0px 5px 10px;
+        overflow: hidden;
+        border-radius: 3px;
+
+        &__num {
+            font-size: 72px;
+            margin-bottom: 10px;
+            color: #fff;
+            z-index: 5;
+        }
+
+        p {height: 100px;}
+
+        &::after {   
+        position: absolute;
+        content: "";
+        background: rgb(252, 76, 2);
+        height: 200px;
+        transition: all 0.3s ease-out 0s;
+        width: 200px;
+        border-radius: 50%;
+        top: -30%;
+        left: -20%;
+        z-index: 1;
+        }
+        &:nth-child(2)::after { top: -35%; left: -25%;};
+        &:nth-child(3)::after { top: -40%;left: -15%;};
+        &:nth-child(4)::after { top: -38%; left: -10%;};
+        &:nth-child(5)::after { top: -40%; left: -20%;};
+        &:nth-child(6)::after { top: -32%; left: auto; right: -15%;};
+        &:nth-child(7)::after { top: -35%; left: auto; right: -15%;};
+    }
+}
+
+.alpha-vd-3 {
+}
