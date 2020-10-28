@@ -2,8 +2,8 @@
 
 .container {
     overflow: hidden;
-}
-
+} 
+ 
 h1, h2, h3, h4 {text-align: center;}
 
 .alpha-mat-1 {
@@ -19,19 +19,18 @@ h1, h2, h3, h4 {text-align: center;}
     width: 100vw;
     padding: 5vh 5vw;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     h3 {width: 100vw;}
     &__left {
-        width: fit-content;
-
-        img { 
-            max-height: 50vh;
-        }
+        width: 48vw;
+        height: 60vh;
+        margin-right: 3vw;
     }
     &__right {
         width: 35vw;
+        margin-left: 3vw;
         p:first-child {
             font-weight: 500;
             font-size: 18px;
@@ -92,3 +91,4 @@ h1, h2, h3, h4 {text-align: center;}
         }
     }
 }
+

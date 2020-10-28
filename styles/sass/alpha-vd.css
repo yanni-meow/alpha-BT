@@ -91,7 +91,7 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   color: #fc4c02;
   letter-spacing: 1px;
@@ -305,6 +305,44 @@ p {
   background-color: #fc4c02;
 }
 
+._anim-show-left {
+  -webkit-transform: translate(-120%, 0px);
+          transform: translate(-120%, 0px);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._anim-show-right {
+  -webkit-transform: translate(120%, 0px);
+          transform: translate(120%, 0px);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._anim-show-top {
+  -webkit-transform: translate(0px, -80%);
+          transform: translate(0px, -80%);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._anim-show-bottom {
+  -webkit-transform: translate(0px, 50%);
+          transform: translate(0px, 50%);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._active {
+  opacity: 1 !important;
+  -webkit-transform: translate(0px, 0px) !important;
+          transform: translate(0px, 0px) !important;
+}
+
 @font-face {
   font-family: 'Roboto', sans-serif;
   src: url(../fonts/Roboto-Bold.ttf);
@@ -387,10 +425,10 @@ p {
           flex: 1;
   text-align: center;
   position: relative;
+  cursor: pointer;
   padding: 20px 20px;
   -webkit-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
-  cursor: pointer;
 }
 
 .sub-menu__list {
@@ -489,6 +527,10 @@ p {
   -webkit-animation: 0.3s cubic-bezier(0, 0.87, 0.71, 1.24) 0.3s 1 normal forwards running;
           animation: 0.3s cubic-bezier(0, 0.87, 0.71, 1.24) 0.3s 1 normal forwards running;
   max-width: 132px;
+}
+
+.container {
+  overflow: hidden;
 }
 
 h2 {

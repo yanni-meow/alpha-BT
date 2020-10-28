@@ -80,6 +80,76 @@ p {
 } 
 
 
+// стили списков
+
+.icon-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    div {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 3vw;
+        height: 3vw;
+        margin: 1vw;
+        border-radius: 50%;
+        background: $orange;
+        img {
+            height: 50%;
+        }
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.point-list {
+    &::before {
+        content: '';
+        position: absolute;
+        margin-right: 2vw;
+        border-radius: 50%;
+        top: .7vh;
+        left: -25px;
+        width: 8px;
+        height: 8px;
+        background-color: $orange;
+    }
+}
+
+// анимация при скролле
+
+._anim-show {
+    &-left{ 
+        transform: translate(-120%, 0px);
+        opacity: 0;
+        transition: all .8s ease 0s;
+        }
+    &-right{ 
+        transform: translate(120%, 0px);
+        opacity: 0;
+        transition: all .8s ease 0s;
+        }
+    &-top{ 
+        transform: translate(0px, -80%);
+        opacity: 0;
+        transition: all .8s ease 0s;
+        }
+    &-bottom{
+        transform: translate(0px, 50%);
+        opacity: 0;
+        transition: all .8s ease 0s;
+    }
+}
+
+._active {
+    opacity: 1 !important;
+    transform: translate(0px, 0px) !important; 
+}
+
+// стиль секций со слайдером
+
 .slyder {
     height: 95vh;
     width: 100vw;
@@ -162,51 +232,44 @@ p {
     }
 }
 
+// стиль карусели и её элементов
 
-.icon-list {
-    width: 100%;
+.carousel {
     display: flex;
     align-items: center;
-    div {
-        display: inline-flex;
+    z-index: 3;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        perspective: 300px;
+    }
+    &__item {
+        display: flex;
         align-items: center;
         justify-content: center;
-        width: 3vw;
-        height: 3vw;
-        margin: 1vw;
-        border-radius: 50%;
-        background: $orange;
-        img {
-            height: 50%;
-        }
-    }
-    p {
-        margin: 0;
-    }
-}
+        width: 20vw;
 
-.point-list {
-    &::before {
-        content: '';
         position: absolute;
-        margin-right: 2vw;
-        border-radius: 50%;
-        top: .7vh;
-        left: -25px;
-        width: 8px;
-        height: 8px;
-        background-color: $orange;
+        transition: transform 1s, opacity 1s;
+        opacity: .5;
+        z-index: 2;
+
+        img {width: 130%; z-index: 1;}
     }
 }
 
-._anim-show {
-    transform: translate(0px, 120%);
-    opacity: 0;
-    transition: all .8s ease 0%;
+.hide { transform: translate(-150%, 40%) scale(0.5);}
+.prev { transform: translate(-90%, 20%) scale(0.75);}
+.act { opacity: 1; z-index: 5;}
+.next { transform: translate(90%, 20%) scale(0.75);}
+.new-next { transform: translate(-150%, 40%) scale(0.5);}
+.hide, .new-next {
+    z-index: 1;
+    opacity: 0; 
+    transition: opacity .5s, transform .5s;
 }
-
-.anim-show._active,
-._anim-show ._active {
-    opacity: 1;
-    transform: translate(0px, 0px);
-}  

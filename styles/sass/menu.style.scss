@@ -41,12 +41,11 @@
             flex: 1;
             text-align: center;
             position: relative;
+            cursor: pointer;
     
             padding: 20px 20px;
             transition: all 0.15s ease-out 0s;
-            cursor: pointer;
-        }
-        
+        }        
     }
 }
 
@@ -64,9 +63,8 @@
 
     line-height: 1.5;
     margin: -500px 0 0 -1.6rem;
-
     transition: all 0.4s ease-out 0s;
-    
+
     li {
         text-align: left;
         z-index: 5;

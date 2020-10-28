@@ -2,6 +2,7 @@
 
 .container {
     padding: 5vh 0;
+    overflow: hidden;
 }
 
 h3, h2 {
@@ -29,7 +30,6 @@ p {
     }
 }
 
-
 .sueo-1 {
     height: 95vh;
     width: 100vw;
@@ -39,15 +39,20 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background: url(../../images/sueo/header.png) no-repeat 25% bottom;
+    background-size: 60%;
+    // clip-path: url(#clipPathSueoHeader);
 
     img {
         position: absolute;
         right: 5vw;
         top: 0;
         max-width: 25vw;
+        z-index: 0;
     }
 
     &__top {
+        z-index: 5;
         margin: 2vh 0;
         h3 {
             padding-bottom: 0;
@@ -65,17 +70,10 @@ p {
         align-items: center;
         justify-content: space-around;
         position: relative;
-
-        img {
-            max-width: 60vw;
-            position: absolute;
-            left: 5vw;
-            top: auto;
-            bottom: 0;
-        }
     }
 
     &__right {
+        z-index: 5;
         width: 40vw;
         margin-left: 50vw;
         h6 {
@@ -83,6 +81,7 @@ p {
         }
         p {
             padding-left: 2vw;
+            margin: 0;
             &:nth-child(odd) {
                 background: linear-gradient(to right, rgb(255, 245, 233), transparent);
             }
@@ -90,10 +89,14 @@ p {
                 width: 100%;
                 font-size: 16px;
                 color: $orange;
-                transition: all 0.3s ease-out 0s;        
+                transition: all 0.3s ease-out 0s;
+                &:hover {transform: translateX(50px, 0);}        
             }
         }
     }
+}
+
+#clipPathSueoHeader {
 }
 
 .sueo-2 {

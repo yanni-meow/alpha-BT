@@ -6,9 +6,6 @@ h2 {
     line-height: 1; 
     transition: all 0.3s ease-out 0s;
 
-    //opacity: 0;
-    //transform: translateY(-100px);
-
     opacity: 1;
     transform: translateY(0px);
 }
@@ -19,15 +16,15 @@ h6 {
     line-height: 1.2;
     font-weight: 500;
     letter-spacing: 0;
+
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 h5 {
     font-size: 36px;
     margin-top: 35px;
     transition: all 0.3s ease-out 0.1s;
-
-    // opacity: 0;
-    // transform: translateY(-100px);
 
     opacity: 1;
     transform: translateY(0px);
@@ -38,12 +35,13 @@ h5 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    padding: 15vh 0;
+    padding: 10vh 0 5vh;
+    overflow: hidden;
 }
 
 .team__photo {
     width: 45vw;
-    height: 80vh;
+    height: 95vh;
     img {
         max-width: 100%;
         align-self: baseline;

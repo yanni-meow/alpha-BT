@@ -91,7 +91,7 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   color: #fc4c02;
   letter-spacing: 1px;
@@ -305,6 +305,36 @@ p {
   background-color: #fc4c02;
 }
 
+._anim-show-left {
+  -webkit-transform: translate(-120%, 0px);
+          transform: translate(-120%, 0px);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._anim-show-right {
+  -webkit-transform: translate(120%, 0px);
+          transform: translate(120%, 0px);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._anim-show-top {
+  -webkit-transform: translate(0px, -120%);
+          transform: translate(0px, -120%);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._active {
+  opacity: 1 !important;
+  -webkit-transform: translate(0px, 0px) !important;
+          transform: translate(0px, 0px) !important;
+}
+
 @font-face {
   font-family: 'Roboto', sans-serif;
   src: url(../fonts/Roboto-Bold.ttf);
@@ -387,10 +417,10 @@ p {
           flex: 1;
   text-align: center;
   position: relative;
+  cursor: pointer;
   padding: 20px 20px;
   -webkit-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
-  cursor: pointer;
 }
 
 .sub-menu__list {
@@ -413,15 +443,12 @@ p {
           box-shadow: 0 3px 4px #cfcfcf;
   line-height: 1.5;
   margin: -500px 0 0 -1.6rem;
-  -webkit-transition: all 0.4s ease-out 0s;
-  transition: all 0.4s ease-out 0s;
-}
-
-.sub-menu__list li {
-  text-align: left;
-  z-index: 5;
-  background: #fff;
-  padding: 10px 25px;
+  -webkit-transition: all 0.4s ease-out 0s li;
+  transition: all 0.4s ease-out 0s li;
+  transition-text-align: left;
+  transition-z-index: 5;
+  transition-background: #fff;
+  transition-padding: 10px 25px;
 }
 
 .open {
@@ -508,6 +535,9 @@ h6 {
   line-height: 1.2;
   font-weight: 500;
   letter-spacing: 0;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 h5 {
@@ -531,12 +561,13 @@ h5 {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 15vh 0;
+  padding: 10vh 0 5vh;
+  overflow: hidden;
 }
 
 .team__photo {
   width: 45vw;
-  height: 80vh;
+  height: 95vh;
 }
 
 .team__photo img {

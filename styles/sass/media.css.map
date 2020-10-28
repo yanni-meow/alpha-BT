@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "main.media.scss"
+        "media.scss"
     ],
     "names": [],
-    "file": "main.media.css"
+    "file": "media.css"
 }

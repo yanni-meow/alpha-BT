@@ -13,12 +13,14 @@ if (animItems.length > 0) {
 
             let animItemPoint = window.innerHeight - animItemHeight / animStart;
 
-            if(animItemHeight >= window.innerHeight) {
+            if(animItemHeight > window.innerHeight) {
                 animItemPoint = window.innerHeight - window.innerHeight / animStart;
             }
 
             if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-                animItem.classList.add('_active');
+                // if (animItem.classList.contains('_anim-show')) {
+                    animItem.classList.add('_active');
+                // } 
             } else {
                 if (!animItem.classList.contains('_anim-no-hide')) {
                 animItem.classList.remove('_active');
@@ -37,5 +39,3 @@ if (animItems.length > 0) {
         animOnScroll()
     }, 300);
 }
-
-// 

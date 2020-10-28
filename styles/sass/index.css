@@ -305,19 +305,34 @@ p {
   background-color: #fc4c02;
 }
 
-._anim-show {
-  -webkit-transform: translate(0px, 120%);
-          transform: translate(0px, 120%);
+._anim-show-left {
+  -webkit-transform: translate(-120%, 0px);
+          transform: translate(-120%, 0px);
   opacity: 0;
-  -webkit-transition: all .8s ease 0%;
-  transition: all .8s ease 0%;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
 }
 
-.anim-show._active,
-._active ._anim-show {
-  opacity: 1;
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
+._anim-show-right {
+  -webkit-transform: translate(120%, 0px);
+          transform: translate(120%, 0px);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._anim-show-top {
+  -webkit-transform: translate(0px, -120%);
+          transform: translate(0px, -120%);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._active {
+  opacity: 1 !important;
+  -webkit-transform: translate(0px, 0px) !important;
+          transform: translate(0px, 0px) !important;
 }
 
 @font-face {
@@ -402,10 +417,10 @@ p {
           flex: 1;
   text-align: center;
   position: relative;
+  cursor: pointer;
   padding: 20px 20px;
   -webkit-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
-  cursor: pointer;
 }
 
 .sub-menu__list {
@@ -428,15 +443,12 @@ p {
           box-shadow: 0 3px 4px #cfcfcf;
   line-height: 1.5;
   margin: -500px 0 0 -1.6rem;
-  -webkit-transition: all 0.4s ease-out 0s;
-  transition: all 0.4s ease-out 0s;
-}
-
-.sub-menu__list li {
-  text-align: left;
-  z-index: 5;
-  background: #fff;
-  padding: 10px 25px;
+  -webkit-transition: all 0.4s ease-out 0s li;
+  transition: all 0.4s ease-out 0s li;
+  transition-text-align: left;
+  transition-z-index: 5;
+  transition-background: #fff;
+  transition-padding: 10px 25px;
 }
 
 .open {
@@ -506,8 +518,68 @@ p {
   max-width: 132px;
 }
 
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
 h6 {
   font-size: 16px;
+}
+
+.scroll-nav {
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  right: 50px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 7px;
+  color: #fff;
+  width: 50px;
+  height: 200px;
+}
+
+.scroll-nav ul {
+  margin-left: 5px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-transition: -webkit-transform 200ms ease-out 0s;
+  transition: -webkit-transform 200ms ease-out 0s;
+  transition: transform 200ms ease-out 0s;
+  transition: transform 200ms ease-out 0s, -webkit-transform 200ms ease-out 0s;
+}
+
+.scroll-nav ul #pointer {
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  background: #fc4c02;
+  -webkit-transform: translateY(-75px);
+          transform: translateY(-75px);
+  z-index: 3;
+}
+
+.scroll-nav ul li {
+  cursor: pointer;
+  padding: 8px 10px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  z-index: 4;
 }
 
 .main {
@@ -521,11 +593,10 @@ h6 {
   position: absolute;
   -webkit-transition: all 0.8s ease-out 0s;
   transition: all 0.8s ease-out 0s;
-  top: 100px;
-  left: 0;
+  top: 150px;
+  left: 200px;
   width: 206.308px;
   z-index: 1;
-  opacity: 0;
 }
 
 .main__text {
@@ -545,12 +616,6 @@ h6 {
   padding: 25px;
 }
 
-.main__logo._active {
-  top: 100px;
-  left: 200px;
-  opacity: 1;
-}
-
 .slyde-2 {
   height: 100vh;
   background: url(../../images/index/slyde-2.png) bottom no-repeat, #eff0f0;
@@ -562,8 +627,10 @@ h6 {
   position: absolute;
   top: 20%;
   z-index: 1;
-  left: 0;
-  opacity: 0;
+  left: 200px;
+  opacity: 1;
+  -webkit-transition: all 0.8s ease-out 0s;
+  transition: all 0.8s ease-out 0s;
   height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,11 +650,6 @@ h6 {
   width: 35vw;
 }
 
-.slyde-2__box._active {
-  left: 200px;
-  opacity: 1;
-}
-
 .slyde-3 {
   height: 100vh;
   background: url(../../images/index/slyde-3.jpg) center;
@@ -599,8 +661,8 @@ h6 {
   position: absolute;
   top: 35%;
   z-index: 1;
-  left: 0;
-  opacity: 0;
+  left: 200px;
+  opacity: 1;
   height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -620,11 +682,6 @@ h6 {
   width: 35vw;
 }
 
-.slyde-3__box._active {
-  left: 200px;
-  opacity: 1;
-}
-
 .slyde-4 {
   height: 100vh;
   background: url(../../images/index/slyde-4.jpg) center no-repeat;
@@ -636,8 +693,8 @@ h6 {
   position: absolute;
   top: 29%;
   z-index: 1;
-  right: 0;
-  opacity: 0;
+  right: 170px;
+  opacity: 1;
   height: 30vh;
   max-width: 50vw;
   display: -webkit-box;
@@ -655,11 +712,6 @@ h6 {
   text-align: right;
 }
 
-.slyde-4__box._active {
-  right: 170px;
-  opacity: 1;
-}
-
 .slyde-5 {
   height: 100vh;
   background: url(../../images/index/slyde-5.jpg) right;
@@ -671,8 +723,8 @@ h6 {
   position: absolute;
   top: 29%;
   z-index: 1;
-  left: 0;
-  opacity: 0;
+  left: 200px;
+  opacity: 1;
   height: 25vh;
   max-width: 50vw;
   display: -webkit-box;
@@ -687,11 +739,6 @@ h6 {
           align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-.slyde-5__box._active {
-  left: 200px;
-  opacity: 1;
 }
 
 .slyde-6 {
@@ -712,6 +759,13 @@ h6 {
   width: 32vw;
   height: 45vh;
   padding: 30px 10px;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.slyde-6__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .slyde-6__item h1 {

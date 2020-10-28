@@ -1,6 +1,7 @@
 @import 'menu.style.scss';
 
 .container {
+    overflow: hidden;
 }
 
 p {
@@ -70,7 +71,6 @@ h3 span {
         p {font-size: 14px;}
     }
 }
-
 
 .sail-3 {
     height: 95vh;

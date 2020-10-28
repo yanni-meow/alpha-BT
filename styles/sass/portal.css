@@ -91,7 +91,7 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   color: #fc4c02;
   letter-spacing: 1px;
@@ -305,6 +305,44 @@ p {
   background-color: #fc4c02;
 }
 
+._anim-show-left {
+  -webkit-transform: translate(-120%, 0px);
+          transform: translate(-120%, 0px);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._anim-show-right {
+  -webkit-transform: translate(120%, 0px);
+          transform: translate(120%, 0px);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._anim-show-top {
+  -webkit-transform: translate(0px, -80%);
+          transform: translate(0px, -80%);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._anim-show-bottom {
+  -webkit-transform: translate(0px, 50%);
+          transform: translate(0px, 50%);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._active {
+  opacity: 1 !important;
+  -webkit-transform: translate(0px, 0px) !important;
+          transform: translate(0px, 0px) !important;
+}
+
 @font-face {
   font-family: 'Roboto', sans-serif;
   src: url(../fonts/Roboto-Bold.ttf);
@@ -387,10 +425,10 @@ p {
           flex: 1;
   text-align: center;
   position: relative;
+  cursor: pointer;
   padding: 20px 20px;
   -webkit-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
-  cursor: pointer;
 }
 
 .sub-menu__list {
@@ -491,6 +529,10 @@ p {
   max-width: 132px;
 }
 
+.container {
+  overflow: hidden;
+}
+
 h3 {
   margin: 1vh 0;
   text-align: center;
@@ -537,6 +579,13 @@ h3 {
 
 .portal-1__left img {
   width: 95%;
+  -webkit-transition: ease .8s;
+  transition: ease .8s;
+}
+
+.portal-1__left img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .portal-1__right {
@@ -625,6 +674,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   margin: 2px;
 }
 
@@ -695,9 +745,11 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   padding: 3px;
+  opacity: 1;
 }
 
 .portal-2__bottom__item p {
+  position: absolute;
   height: 100%;
   width: 100%;
   color: #fff;
@@ -712,7 +764,13 @@ h3 {
   text-align: center;
   padding: 3px;
   margin: 0;
-  display: none;
+  opacity: 0;
+  -webkit-transition: ease .4s;
+  transition: ease .4s;
+}
+
+.portal-2__bottom__item p:hover {
+  opacity: 1;
 }
 
 .portal-3 {
@@ -734,9 +792,9 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 50vw;
   height: 40vw;
   margin-left: 40vw;
@@ -749,6 +807,7 @@ h3 {
 }
 
 .portal-3__box {
+  margin-top: 3vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -817,12 +876,22 @@ h3 {
 
 .portal-4__middle {
   width: 46vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .portal-4__middle img {
   -webkit-clip-path: url(#clipControlArea);
           clip-path: url(#clipControlArea);
-  width: 100%;
+  max-width: 100%;
+  max-height: 75vh;
 }
 
 .portal-4__right {

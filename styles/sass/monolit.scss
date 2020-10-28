@@ -1,7 +1,7 @@
 @import 'menu.style.scss';
 
-
 .container {
+    overflow: hidden;
 }
 
 
@@ -129,3 +129,4 @@
         &:nth-child(6) {top: 190%;}
     }
 }
+

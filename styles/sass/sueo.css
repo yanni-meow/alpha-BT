@@ -91,7 +91,7 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   color: #fc4c02;
   letter-spacing: 1px;
@@ -305,6 +305,44 @@ p {
   background-color: #fc4c02;
 }
 
+._anim-show-left {
+  -webkit-transform: translate(-120%, 0px);
+          transform: translate(-120%, 0px);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._anim-show-right {
+  -webkit-transform: translate(120%, 0px);
+          transform: translate(120%, 0px);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._anim-show-top {
+  -webkit-transform: translate(0px, -80%);
+          transform: translate(0px, -80%);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._anim-show-bottom {
+  -webkit-transform: translate(0px, 50%);
+          transform: translate(0px, 50%);
+  opacity: 0;
+  -webkit-transition: all .8s ease 0s;
+  transition: all .8s ease 0s;
+}
+
+._active {
+  opacity: 1 !important;
+  -webkit-transform: translate(0px, 0px) !important;
+          transform: translate(0px, 0px) !important;
+}
+
 @font-face {
   font-family: 'Roboto', sans-serif;
   src: url(../fonts/Roboto-Bold.ttf);
@@ -387,10 +425,10 @@ p {
           flex: 1;
   text-align: center;
   position: relative;
+  cursor: pointer;
   padding: 20px 20px;
   -webkit-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
-  cursor: pointer;
 }
 
 .sub-menu__list {
@@ -493,6 +531,7 @@ p {
 
 .container {
   padding: 5vh 0;
+  overflow: hidden;
 }
 
 h3, h2 {
@@ -537,6 +576,8 @@ p {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background: url(../../images/sueo/header.png) no-repeat 25% bottom;
+  background-size: 60%;
 }
 
 .sueo-1 img {
@@ -544,9 +585,11 @@ p {
   right: 5vw;
   top: 0;
   max-width: 25vw;
+  z-index: 0;
 }
 
 .sueo-1__top {
+  z-index: 5;
   margin: 2vh 0;
 }
 
@@ -573,15 +616,8 @@ p {
   position: relative;
 }
 
-.sueo-1__bottom img {
-  max-width: 60vw;
-  position: absolute;
-  left: 5vw;
-  top: auto;
-  bottom: 0;
-}
-
 .sueo-1__right {
+  z-index: 5;
   width: 40vw;
   margin-left: 50vw;
 }
@@ -592,6 +628,7 @@ p {
 
 .sueo-1__right p {
   padding-left: 2vw;
+  margin: 0;
 }
 
 .sueo-1__right p:nth-child(odd) {
@@ -605,6 +642,11 @@ p {
   color: #fc4c02;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+}
+
+.sueo-1__right p a:hover {
+  -webkit-transform: translateX(50px, 0);
+          transform: translateX(50px, 0);
 }
 
 .sueo-2 {
