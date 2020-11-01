@@ -17,7 +17,6 @@ if(menu) {
 };
 
 // ПО КЛИКУ
-
         // if(menu) {
         //     menu.forEach((element, i) => {
         //         element.addEventListener('click', function(event) {

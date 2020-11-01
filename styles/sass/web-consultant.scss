@@ -2,9 +2,8 @@
 
 .container {
     background: rgb(243, 243, 243);
-    overflow: hidden;
 }
-
+       
 h3 {
     text-align: center;
     font-weight: 500;
@@ -93,9 +92,6 @@ h3 {
         text-align: center;
     }
 
-    &__content {
-    }
-
     &__item-box {
         display: flex;
         flex-direction: column;
@@ -105,7 +101,7 @@ h3 {
         width: 20vw;
         position: absolute;
         border-radius: 50%;
-
+     
         &:first-child {
             left: 8vw;
             top: 25vh;
@@ -138,7 +134,7 @@ h3 {
         img {
             margin: 0 2vw;
         }
-
+     
         &__box {
             h3 {
                 text-align: left;
@@ -165,8 +161,8 @@ h3 {
         align-items: center;
         justify-content: space-around;
         background: linear-gradient(to right, rgb(29, 42, 62), rgb(199, 202, 206));
-        color: #fff;
-        &__left, 
+        color: #fff; 
+        &__left,    
         &__right {
             display: flex;
             align-items: center;
@@ -187,6 +183,10 @@ h3 {
 }
 
 .web-const-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
     height: 100vh;
     padding: 7vh 5vw;
     
@@ -226,7 +226,7 @@ h3 {
         }
     }
 }
-
+  
 .web-const-6 {
     height: 95vh;
     padding: 5vh 5vw;
@@ -255,3 +255,5 @@ h3 {
         }
     }
 }
+
+@import './web-consultant.media.scss';

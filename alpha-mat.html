@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Альфамат</title>
     
-    <!-- <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon"> -->
-    <link rel="stylesheet" href="./styles/sass/alpha-mat.css">
-    
-    
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/sass/alpha-mat.css">    
+    <link rel="stylesheet" href="styles/slick/slick.css">
+    <link rel="stylesheet" href="styles/slick//slick-theme.css">
+
 </head>
 <body>
     <div class="container">
         <nav class="menu">
             <img class="menu__logo" src="./images/logo.svg" alt="">
+            <label for="menu__burger__check"><span class="menu__burger"></span></label>
+            <input type="checkbox" id="menu__burger__check">
             <ul class="menu__list">
                 <li><a href="./index.html">Главная</a></li>
                 <li class="menu__list__to-sub">Продукты
@@ -67,14 +70,29 @@
 
         <section class="alpha-mat-2">
             <h3 class="_anim-items _anim-show-left">Основные задачи системы</h3>
-            <div class="alpha-mat-2__left carousel">
-                <ul class="carousel__list">
-                    <li class="carousel__item hide"></li>
-                    <li class="carousel__item prev"><img src="./images/alpha-mat/category/1.png" alt=""></li>
-                    <li class="carousel__item act"><img src="./images/alpha-mat/category/2.png" alt=""></li>
-                    <li class="carousel__item next"><img src="./images/alpha-mat/category/3.png" alt=""></li>
-                    <li class="carousel__item next new-next"></li>
-                </ul>
+            <div class="alpha-mat-2__left">
+                <div class="alpha-mat-2__left__content slider__content slider">
+                    <div class="slider__item">
+                        <img src="./images/alpha-mat/category/1.png" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img src="./images/alpha-mat/category/2.png" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img src="./images/alpha-mat/category/3.png" alt="">
+                    </div>           
+                </div>
+                <div class="alpha-mat-2__left__controls slider__contorls slider">
+                    <div class="slider__item__control">
+                        <img src="./images/alpha-mat/category/1.png" alt="">
+                    </div>
+                    <div class="slider__item__control">
+                        <img src="./images/alpha-mat/category/2.png" alt="">
+                    </div>
+                    <div class="slider__item__control">
+                        <img src="./images/alpha-mat/category/3.png" alt="">
+                    </div>  
+                </div>
             </div>
             <div class="alpha-mat-2__right">
                 <ul><p>Терминал адаптируется под любую нашу систему</p>
@@ -135,7 +153,11 @@
     </div>
 
     <script src="./scripts/anim.js"></script>
-    <script src="./scripts/carousel.js"></script>
     <script src="./scripts/menu.js"></script>
+
+   <script src="scripts/jquery3.5.1.js"></script>
+   <script src="scripts/slick.min.js"></script>
+   <script src="scripts/carousel.js"></script>
+
 </body>
 </html>           

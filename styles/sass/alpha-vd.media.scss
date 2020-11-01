@@ -1,0 +1,19 @@
+@media (max-width: 1023px) {
+
+    .alpha-vd-1 {
+        background: url(../../images/alpha-vd/header.jpg) center no-repeat;
+        background-size: auto 70%;
+    }
+
+    .alpha-vd-2 {
+        padding: 5vh 5vw;
+        h3 { font-size: 30px;}
+        &__item {
+            width: 140px;
+        }
+    }
+
+    .alpha-vd-3 {
+        padding: 8vh 5vw;
+    }
+}

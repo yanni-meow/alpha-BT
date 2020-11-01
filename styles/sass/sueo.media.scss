@@ -1,0 +1,75 @@
+@media (max-width: 1023px) {
+
+    .sueo-1 {
+        background: url(../../images/sueo/gran-on.png) no-repeat bottom/100% 40%, url(../../images/sueo/header.png) no-repeat -7vw bottom/90%;
+        &__top {
+            h2 { margin: 1vh 0;}
+            p { max-width: 100%;}
+        }
+
+        &__right {
+            width: 60vw;
+        }
+
+    }
+
+    .sueo-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__top {
+            display: none;
+        }
+
+        &__bottom {
+            width: 100vw;
+            padding: 0 2vw;
+
+            &__item {
+                width: 20vw;
+                &__num {
+                    width: 5vw;
+                    height: 5vw;
+                    font-size: 24px;
+                } 
+                &__icon {
+                    width: 15vw;
+                    height: 15vw;
+                }
+            }
+        }
+    }
+
+    .sueo-4 {
+        p {
+            width: 100%;
+        }
+    }
+
+    .sueo-5 {
+        &__top {
+            p { max-width: 90vw;}
+        }
+        &__bottom {
+            position: relative;
+            justify-content: center;
+        }
+        &__left {
+            width: 70vw;
+            z-index: 6;
+            p {
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+        &__right {
+            position: absolute;
+            width: 90vw;
+            img { opacity: .3;}
+        }
+    }
+
+    .sueo-6 {
+        h3 { margin: 0;}
+    }
+}

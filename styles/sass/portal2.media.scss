@@ -1,0 +1,88 @@
+@media (max-width: 1023px) {
+
+    .portal-1 {
+        flex-direction: column;
+
+        &__left {
+            width: 100vw;
+            height: 40vh;
+            margin-left: 0;
+            margin-top: 55px;
+            img { max-height: 40vh; width: auto;}
+        };
+
+        &__right {
+            width: 80vw;
+            margin-left: 5vw;
+
+            ul {
+                margin-left: 3vw;
+            };
+        };
+    } 
+
+    .portal-2 {
+        &__top {
+            margin: 2vw 0;
+        }
+        &__bottom {
+            height: 70vh;
+            align-items: center;
+            justify-content: center;
+            &__box {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            &__item {
+                height: 6.7vh;
+            }
+        }
+    }
+
+    .portal-3 {
+        &__left {
+            width: 70vw;
+            margin: 0 auto;
+            p { width: 100%;}
+        }
+
+        &__box {
+            p { width: fit-content;}
+        }
+    }
+
+    #gran {
+        width: 130vw;
+        height: 80vh;
+        left: -30%;
+    }
+    .portal-4 {
+
+        &__left {
+            display: none;
+        }
+
+        &__middle {
+            width: 65vw;
+            top: -4vh;
+        }
+
+        &__right {
+            width: 25vw;
+            top: 0;
+        }
+    }
+
+    .portal-5 {
+        position: relative;
+        &__left {
+            width: 90vw;
+        }
+        &__right {
+            position: absolute;
+            right: 3vw;
+            img { opacity: .2;}
+        }
+    }
+};

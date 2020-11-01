@@ -1,5 +1,5 @@
 @import 'menu.style.scss';
-
+ 
 .container {
     padding: 5vh 0;
     overflow: hidden;
@@ -39,9 +39,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: url(../../images/sueo/header.png) no-repeat 25% bottom;
-    background-size: 60%;
-    // clip-path: url(#clipPathSueoHeader);
+    background: url(../../images/sueo/gran-on.png) no-repeat bottom/100% 40%, url(../../images/sueo/header.png) no-repeat 25% bottom/60%;
 
     img {
         position: absolute;
@@ -64,14 +62,7 @@ p {
             max-width: 30vw;
         }
     }
-
-    &__bottom {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        position: relative;
-    }
-
+ 
     &__right {
         z-index: 5;
         width: 40vw;
@@ -85,9 +76,12 @@ p {
             &:nth-child(odd) {
                 background: linear-gradient(to right, rgb(255, 245, 233), transparent);
             }
+            &:nth-child(even) {
+                background: linear-gradient(to right, rgb(255, 255, 255), transparent);
+            }
             a {
                 width: 100%;
-                font-size: 16px;
+                font-size: 16px; 
                 color: $orange;
                 transition: all 0.3s ease-out 0s;
                 &:hover {transform: translateX(50px, 0);}        
@@ -96,16 +90,13 @@ p {
     }
 }
 
-#clipPathSueoHeader {
-}
-
 .sueo-2 {
     height: 100vh;
     width: 100vw;
     padding: 5vh 5vw;
     background: url(../../images/sueo/system.jpg) right no-repeat;
     background-size: contain;
-
+  
     &__top {
         display: flex;
         align-items: center;
@@ -135,11 +126,11 @@ p {
     &__bottom {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         h3 {
             width: 100vw;
-        }
+        }      
         &__item {
             display: flex;
             flex-direction: column;
@@ -160,9 +151,9 @@ p {
                 font-size: 20px;
 
                 position: absolute;
-                top: -.6vw;
+                top: -.6vw; 
                 left: -.6vw;
-            }
+            }  
 
             &__icon {
                 display: flex;
@@ -183,7 +174,8 @@ p {
     }
 }
 
-// .sueo-3 {}
+.sueo-3 { height: 100vh;}
+.slider__content { margin-top: 0 !important;}
 
 .sueo-4 {
     height: 95vh;
@@ -228,14 +220,14 @@ p {
     height: 100vh;
     width: 100vw;
     padding: 5vh 5vw;
-
+        
     &__top {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 25vh;
-        p {
+        p { 
             text-align: center;
             max-width: 40vw;
             margin: 0 auto;
@@ -265,7 +257,7 @@ p {
         img { max-width: 100%;}
     }
 }
-
+ 
 .sueo-6 {
     height: 100vh;
     width: 100vw;
@@ -288,7 +280,7 @@ p {
 
     &__left {
         width: 60vw;
-        height: 65vh;
+        height: fit-content;
         img {
             object-fit: cover;
             max-width: 100%;
@@ -306,6 +298,7 @@ p {
             p {
                padding: 0;
                position: relative;
+               text-align: left;
             }
         }
     }
@@ -343,3 +336,5 @@ p {
         }
     }
 }
+
+@import './sueo.media.scss'; 

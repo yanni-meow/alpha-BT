@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Видеоконсультант</title>
     
-    <!-- <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/sass/new-videoconsultant.css">
     
     
@@ -14,6 +14,8 @@
     <div class="container">
         <nav class="menu">
             <img class="menu__logo" src="./images/logo.svg" alt="">
+            <label for="menu__burger__check"><span class="menu__burger"></span></label>
+            <input type="checkbox" id="menu__burger__check">
             <ul class="menu__list">
                 <li><a href="./index.html">Главная</a></li>
                 <li class="menu__list__to-sub">Продукты
@@ -224,125 +226,139 @@
                     </div>
                 </div>
             </section>
-
-            <section class="new-video-6">
-                <div class="new-video-6__slyde slyde1">
-                    <h3>Технические характеристики</h3>
-                    <div class="new-video-6__content">
-                        <h6>Главный экран</h6>
-                        <ul class="new-video-6__list">
-                            <li><p>Диагональ экрана</p><span></span><p>50 дюймов</p></li>
-                            <li><p>Разрешение</p><span></span><p>4K UHD (3840х2160)</p></li>
-                            <li><p>Угол обзора</p><span></span><p>178°</p></li>
-                            <li><p>Формат экрана</p><span></span><p>16:9</p></li>
-                            <li><p>Multitouch</p><span></span><p>10 касаний</p></li>
-                            <li><p>Устойчивое к царапинам стекло</p><span></span><p>Есть</p></li>
-                            <li><p>Индекс частоты обновления</p><span></span><p>50 Гц</p></li>
-                        </ul>
-                        <h6>Зона управления</h6>
-                        <ul class="new-video-6__list">
-                            <li><p>Адаптирована для маломобильных граждан</p><span></span><p>Есть</p></li>
-                            <li><p>Мультиязычный интерфейс</p><span></span><p>Есть</p></li>
-                            <li><p>Многофункциональное меню</p><span></span><p>Есть</p></li>
-                            <li><p>Система оценки качества работы оператора</p><span></span><p>Есть</p></li>
-                            <li><p>Виртуальная клавиатура</p><span></span><p>Есть</p></li>
-                            <li><p>Трансляция экрана оператора</p><span></span><p>Есть</p></li>
-                            <li><p>Считывание QR-кода, штрих-кода</p><span></span><p>Есть</p></li>
-                            <li><p>Монитор</p><span></span><p>Есть</p></li>
-                            <li><p>Лазерный принтер</p><span></span><p>Есть</p></li>
-                            <li><p>Сенсорные кнопки</p><span></span><p>Есть</p></li>
-                            <li><p>Камера</p><span></span><p>Есть</p></li>
-                            <li><p>Paypass</p><span></span><p>Есть</p></li>
-                            <li><p>Фотосканер</p><span></span><p>Есть</p></li>
-                            <li><p>Картридер</p><span></span><p>Есть</p></li>
-                            <li><p>Пинпад</p><span></span><p>Есть</p></li>
-                            <li><p>Купюроприёмник</p><span></span><p>Есть</p></li>
-                            <li><p>Телефонная трубка</p><span></span><p>Есть</p></li>
-                       </ul>
-                        <h6>Основное</h6>
-                        <ul class="new-video-6__list">
-                            <li><p>Системный блок</p><span></span><p class="r">Core i5, SSD 256Gb, Видеокарта Intel HD 4000, ОЗУ 8Gb</p></li>
-                            <li><p>Блок питания камер</p><span></span><p class="r">Входное напряжение 220В. Выходное напряжение 12В. 7А</p></li>
-                            <li><p>Динамики</p><span></span><p>Направленные</p></li>
-                            <li><p>Коммутатор</p><span></span><p class="r">Количество портов: 8шт(10, 100, 1000 Мбит/сек)</p></li>
-                            <li><p>Датчик приближения</p><span></span><p class="r">Расстояние срабатывания 50см</p></li>
-                            <li><p>Система активного шумоподавления</p><span></span><p class="r">Два уровня чувствительности и три скорости подавления эхо</p></li>
-                            <li><p>Видеокамера</p><span></span><p class="r">Максимальное разрешение записи: 1920х1080, 2Мpх, Тип матрицы: CMOS</p></li>
-                      </ul>
+  
+            <section class="new-video-6 slider">
+                <input type="radio" name="slider-group" id="slide1" checked/>
+                <div class="slides">
+                    <div class="new-video-6__slyde slyde1">
+                        <h3>Технические характеристики</h3>
+                        <div class="new-video-6__content">
+                            <h6>Главный экран</h6>
+                            <ul class="new-video-6__list">
+                                <li><p>Диагональ экрана</p><span></span><p>50 дюймов</p></li>
+                                <li><p>Разрешение</p><span></span><p>4K UHD (3840х2160)</p></li>
+                                <li><p>Угол обзора</p><span></span><p>178°</p></li>
+                                <li><p>Формат экрана</p><span></span><p>16:9</p></li>
+                                <li><p>Multitouch</p><span></span><p>10 касаний</p></li>
+                                <li><p>Устойчивое к царапинам стекло</p><span></span><p>Есть</p></li>
+                                <li><p>Индекс частоты обновления</p><span></span><p>50 Гц</p></li>
+                            </ul>
+                            <h6>Зона управления</h6>
+                            <ul class="new-video-6__list">
+                                <li><p>Адаптирована для маломобильных граждан</p><span></span><p>Есть</p></li>
+                                <li><p>Мультиязычный интерфейс</p><span></span><p>Есть</p></li>
+                                <li><p>Многофункциональное меню</p><span></span><p>Есть</p></li>
+                                <li><p>Система оценки качества работы оператора</p><span></span><p>Есть</p></li>
+                                <li><p>Виртуальная клавиатура</p><span></span><p>Есть</p></li>
+                                <li><p>Трансляция экрана оператора</p><span></span><p>Есть</p></li>
+                                <li><p>Считывание QR-кода, штрих-кода</p><span></span><p>Есть</p></li>
+                                <li><p>Монитор</p><span></span><p>Есть</p></li>
+                                <li><p>Лазерный принтер</p><span></span><p>Есть</p></li>
+                                <li><p>Сенсорные кнопки</p><span></span><p>Есть</p></li>
+                                <li><p>Камера</p><span></span><p>Есть</p></li>
+                                <li><p>Paypass</p><span></span><p>Есть</p></li>
+                                <li><p>Фотосканер</p><span></span><p>Есть</p></li>
+                                <li><p>Картридер</p><span></span><p>Есть</p></li>
+                                <li><p>Пинпад</p><span></span><p>Есть</p></li>
+                                <li><p>Купюроприёмник</p><span></span><p>Есть</p></li>
+                                <li><p>Телефонная трубка</p><span></span><p>Есть</p></li>
+                           </ul>
+                            <h6>Основное</h6>
+                            <ul class="new-video-6__list">
+                                <li><p>Системный блок</p><span></span><p class="r">Core i5, SSD 256Gb, Видеокарта Intel HD 4000, ОЗУ 8Gb</p></li>
+                                <li><p>Блок питания камер</p><span></span><p class="r">Входное напряжение 220В. Выходное напряжение 12В. 7А</p></li>
+                                <li><p>Динамики</p><span></span><p>Направленные</p></li>
+                                <li><p>Коммутатор</p><span></span><p class="r">Количество портов: 8шт(10, 100, 1000 Мбит/сек)</p></li>
+                                <li><p>Датчик приближения</p><span></span><p class="r">Расстояние срабатывания 50см</p></li>
+                                <li><p>Система активного шумоподавления</p><span></span><p class="r">Два уровня чувствительности и три скорости подавления эхо</p></li>
+                                <li><p>Видеокамера</p><span></span><p class="r">Максимальное разрешение записи: 1920х1080, 2Мpх, Тип матрицы: CMOS</p></li>
+                          </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="new-video-6__slyde slyde2">
-                    <h3>Технические характеристики</h3>
-                    <div class="new-video-6__content">
-                        <h6>Главный экран</h6>
-                        <ul class="new-video-6__list">
-                            <li><p>Диагональ экрана</p><span></span><p>50 дюймов</p></li>
-                            <li><p>Разрешение</p><span></span><p>4K UHD (3840х2160)</p></li>
-                            <li><p>Угол обзора</p><span></span><p>178°</p></li>
-                            <li><p>Формат экрана</p><span></span><p>16:9</p></li>
-                            <li><p>Multitouch</p><span></span><p>10 касаний</p></li>
-                            <li><p>Устойчивое к царапинам стекло</p><span></span><p>Есть</p></li>
-                            <li><p>Индекс частоты обновления</p><span></span><p>50 Гц</p></li>
-                        </ul>
-                        <h6>Зона управления</h6>
-                        <ul class="new-video-6__list">
-                            <li><p>Адаптирована для маломобильных граждан</p><span></span><p>Есть</p></li>
-                            <li><p>Мультиязычный интерфейс</p><span></span><p>Есть</p></li>
-                            <li><p>Многофункциональное меню</p><span></span><p>Есть</p></li>
-                            <li><p>Система оценки качества работы оператора</p><span></span><p>Есть</p></li>
-                            <li><p>Виртуальная клавиатура</p><span></span><p>Есть</p></li>
-                            <li><p>Трансляция экрана оператора</p><span></span><p>Есть</p></li>
-                            <li><p>Считывание QR-кода, штрих-кода</p><span></span><p>Есть</p></li>
-                            <li><p>Монитор</p><span></span><p>Есть</p></li>
-                            <li><p>Лазерный принтер</p><span></span><p>Есть</p></li>
-                            <li><p>Сенсорные кнопки</p><span></span><p>Есть</p></li>
-                            <li><p>Камера</p><span></span><p>Есть</p></li>
-                            <li><p>Paypass</p><span></span><p>Есть</p></li>
-                            <li><p>Фотосканер</p><span></span><p>Есть</p></li>
-                            <li><p>Картридер</p><span></span><p>Есть</p></li>
-                            <li><p>Пинпад</p><span></span><p>Есть</p></li>
-                            <li><p>Купюроприёмник</p><span></span><p>Есть</p></li>
-                            <li><p>Телефонная трубка</p><span></span><p>Есть</p></li>
-                       </ul>
-                        <h6>Основное</h6>
-                        <ul class="new-video-6__list">
-                            <li><p>Системный блок</p><span></span><p class="r">Core i5, SSD 256Gb, Видеокарта Intel HD 4000, ОЗУ 8Gb</p></li>
-                            <li><p>Блок питания камер</p><span></span><p class="r">Входное напряжение 220В. Выходное напряжение 12В. 7А</p></li>
-                            <li><p>Динамики</p><span></span><p>Направленные</p></li>
-                            <li><p>Коммутатор</p><span></span><p class="r">Количество портов: 8шт(10, 100, 1000 Мбит/сек)</p></li>
-                            <li><p>Датчик приближения</p><span></span><p class="r">Расстояние срабатывания 50см</p></li>
-                            <li><p>Система активного шумоподавления</p><span></span><p class="r">Два уровня чувствительности и три скорости подавления эхо</p></li>
-                            <li><p>Видеокамера</p><span></span><p class="r">Максимальное разрешение записи: 1920х1080, 2Мpх, Тип матрицы: CMOS</p></li>
-                      </ul>
+                <input type="radio" name="slider-group" id="slide2" />
+                <div class="slides">
+                    <div class="new-video-6__slyde slyde2">
+                        <h3>Технические характеристики</h3>
+                        <div class="new-video-6__content">
+                            <h6>Главный экран</h6>
+                            <ul class="new-video-6__list">
+                                <li><p>Диагональ экрана</p><span></span><p>50 дюймов</p></li>
+                                <li><p>Разрешение</p><span></span><p>4K UHD (3840х2160)</p></li>
+                                <li><p>Угол обзора</p><span></span><p>178°</p></li>
+                                <li><p>Формат экрана</p><span></span><p>16:9</p></li>
+                                <li><p>Multitouch</p><span></span><p>10 касаний</p></li>
+                                <li><p>Устойчивое к царапинам стекло</p><span></span><p>Есть</p></li>
+                                <li><p>Индекс частоты обновления</p><span></span><p>50 Гц</p></li>
+                            </ul>
+                            <h6>Зона управления</h6>
+                            <ul class="new-video-6__list">
+                                <li><p>Адаптирована для маломобильных граждан</p><span></span><p>Есть</p></li>
+                                <li><p>Мультиязычный интерфейс</p><span></span><p>Есть</p></li>
+                                <li><p>Многофункциональное меню</p><span></span><p>Есть</p></li>
+                                <li><p>Система оценки качества работы оператора</p><span></span><p>Есть</p></li>
+                                <li><p>Виртуальная клавиатура</p><span></span><p>Есть</p></li>
+                                <li><p>Трансляция экрана оператора</p><span></span><p>Есть</p></li>
+                                <li><p>Считывание QR-кода, штрих-кода</p><span></span><p>Есть</p></li>
+                                <li><p>Монитор</p><span></span><p>Есть</p></li>
+                                <li><p>Лазерный принтер</p><span></span><p>Есть</p></li>
+                                <li><p>Сенсорные кнопки</p><span></span><p>Есть</p></li>
+                                <li><p>Камера</p><span></span><p>Есть</p></li>
+                                <li><p>Paypass</p><span></span><p>Есть</p></li>
+                                <li><p>Фотосканер</p><span></span><p>Есть</p></li>
+                                <li><p>Картридер</p><span></span><p>Есть</p></li>
+                                <li><p>Пинпад</p><span></span><p>Есть</p></li>
+                                <li><p>Купюроприёмник</p><span></span><p>Есть</p></li>
+                                <li><p>Телефонная трубка</p><span></span><p>Есть</p></li>
+                           </ul>
+                            <h6>Основное</h6>
+                            <ul class="new-video-6__list">
+                                <li><p>Системный блок</p><span></span><p class="r">Core i5, SSD 256Gb, Видеокарта Intel HD 4000, ОЗУ 8Gb</p></li>
+                                <li><p>Блок питания камер</p><span></span><p class="r">Входное напряжение 220В. Выходное напряжение 12В. 7А</p></li>
+                                <li><p>Динамики</p><span></span><p>Направленные</p></li>
+                                <li><p>Коммутатор</p><span></span><p class="r">Количество портов: 8шт(10, 100, 1000 Мбит/сек)</p></li>
+                                <li><p>Датчик приближения</p><span></span><p class="r">Расстояние срабатывания 50см</p></li>
+                                <li><p>Система активного шумоподавления</p><span></span><p class="r">Два уровня чувствительности и три скорости подавления эхо</p></li>
+                                <li><p>Видеокамера</p><span></span><p class="r">Максимальное разрешение записи: 1920х1080, 2Мpх, Тип матрицы: CMOS</p></li>
+                          </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="new-video-6__slyde slyde3">
-                    <h3>Технические характеристики</h3>
-                    <div class="new-video-6__content">
-                        <h6>Главный экран</h6>
-                        <ul class="new-video-6__list">
-                            <li><p>Диагональ экрана</p><span></span><p>24 дюйма</p></li>
-                            <li><p>Диагональ дополнительного экрана</p><span></span><p>21.5 дюйма</p></li>
-                            <li><p>Разрешение</p><span></span><p>1920x1080</p></li>
-                            <li><p>Multitouch</p><span></span><p>10 касаний</p></li>
-                            <li><p>Устойчивое к царапинам стекло</p><span></span><p>Есть</p></li>
-                        </ul>
-                        <h6>Основное</h6>
-                        <ul class="new-video-6__list">
-                            <li><p>Мультиязычный интерфейс</p><span></span><p>Есть</p></li>
-                            <li><p>Многофункциональное меню</p><span></span><p>Есть</p></li>
-                            <li><p>Принтер</p><span></span><p class="r">Формат А4, ч/б, 20 стр/мин</p></li>
-                            <li><p>Считывание ЭМ полосы</p><span></span><p>Есть</p></li>
-                            <li><p>Камера</p><span></span><p>2M 1080p USB</p></li>
-                            <li><p>Диспенсер выдачи карт</p><span></span><p>Есть</p></li>
-                            <li><p>Сканер</p><span></span><p>Формат А4</p></li>
-                            <li><p>Системный блок</p><span></span><p class="r">Core i5, SSD 480Gb, Видеокарта HD 600, ОЗУ 4Gb</p></li>
-                            <li><p>Блок питания</p><span></span><p class="r">Входное напряжение 220В. Выходное напряжение 12В 8А</p></li>
-                            <li><p>Динамики</p><span></span><p>Колонки 5W</p></li>
-                        </ul>
+                <input type="radio" name="slider-group" id="slide3" />
+                <div class="slides">
+                    <div class="new-video-6__slyde slyde3">
+                        <h3>Технические характеристики</h3>
+                        <div class="new-video-6__content">
+                            <h6>Главный экран</h6>
+                            <ul class="new-video-6__list">
+                                <li><p>Диагональ экрана</p><span></span><p>24 дюйма</p></li>
+                                <li><p>Диагональ дополнительного экрана</p><span></span><p>21.5 дюйма</p></li>
+                                <li><p>Разрешение</p><span></span><p>1920x1080</p></li>
+                                <li><p>Multitouch</p><span></span><p>10 касаний</p></li>
+                                <li><p>Устойчивое к царапинам стекло</p><span></span><p>Есть</p></li>
+                            </ul>
+                            <h6>Основное</h6>
+                            <ul class="new-video-6__list">
+                                <li><p>Мультиязычный интерфейс</p><span></span><p>Есть</p></li>
+                                <li><p>Многофункциональное меню</p><span></span><p>Есть</p></li>
+                                <li><p>Принтер</p><span></span><p class="r">Формат А4, ч/б, 20 стр/мин</p></li>
+                                <li><p>Считывание ЭМ полосы</p><span></span><p>Есть</p></li>
+                                <li><p>Камера</p><span></span><p>2M 1080p USB</p></li>
+                                <li><p>Диспенсер выдачи карт</p><span></span><p>Есть</p></li>
+                                <li><p>Сканер</p><span></span><p>Формат А4</p></li>
+                                <li><p>Системный блок</p><span></span><p class="r">Core i5, SSD 480Gb, Видеокарта HD 600, ОЗУ 4Gb</p></li>
+                                <li><p>Блок питания</p><span></span><p class="r">Входное напряжение 220В. Выходное напряжение 12В 8А</p></li>
+                                <li><p>Динамики</p><span></span><p>Колонки 5W</p></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </section>
+                <div class="slider__control">
+                    <label id="l1" for="slide1"></label>
+                    <label id="l2" for="slide2"></label>
+                    <label id="l3" for="slide3"></label>
+                </div>
+        </section>
 
     </div>
 

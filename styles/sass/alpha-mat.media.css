@@ -1,0 +1,11 @@
+@media (max-width: 1023px) {
+  .alpha-mat-2__left__controls img {
+    max-width: 15vw;
+  }
+  .alpha-mat-2__icon p {
+    text-align: left;
+    margin-left: 1vw;
+    width: 30vw;
+  }
+}
+/*# sourceMappingURL=alpha-mat.media.css.map */

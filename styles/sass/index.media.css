@@ -1,0 +1,49 @@
+@media (max-width: 1023px) {
+  .menu__logo {
+    opacity: 1;
+  }
+  .slyde-1 {
+    background: url(../../images/index/main.jpg) no-repeat center;
+    background-size: auto 90%;
+  }
+  .slyde-1__logo {
+    display: none;
+  }
+  .slyde-1__text {
+    width: 85vw;
+    font-size: 3.5vw;
+  }
+  .slyde-2 {
+    background-size: 180% auto;
+  }
+  .slyde-2__box {
+    left: 10%;
+    height: 25vh;
+  }
+  .slyde-3 {
+    background: url(../../images/index/slyde-3.jpg) 80%;
+  }
+  .slyde-3__box {
+    left: 10%;
+    height: 23vh;
+    max-width: 20vw;
+  }
+  .slyde-4 {
+    background: url(../../images/index/slyde-4.jpg) no-repeat 15%;
+    background-size: auto 100%;
+  }
+  .slyde-4__box {
+    left: 10%;
+    height: 23vh;
+    max-width: 20vw;
+  }
+  .slyde-5 {
+    background: url(../../images/index/slyde-5.jpg) 87%;
+    background-size: auto 100%;
+  }
+  .slyde-6__item {
+    width: 48vw;
+    height: 30vh;
+  }
+}
+/*# sourceMappingURL=index.media.css.map */

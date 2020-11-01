@@ -201,13 +201,14 @@ h3 {
 .new-video-6 {
     height: 95vh;
     width: 100vw;
-    // padding: 5vh 5vw;
+    position: relative;
     
     &__slyde {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         justify-content: center;
+        position: relative;
         height: 95vh;
         width: 100vw;
         padding: 5vh 5vw;
@@ -248,3 +249,59 @@ h3 {
 .slyde1 { background: url(../../images/new-videoconsultant/bg2.jpg) 27% no-repeat; background-size: cover;}
 .slyde2 { background: url(../../images/new-videoconsultant/bg3.jpg) 27% no-repeat; background-size: cover;}
 .slyde3 { background: url(../../images/new-videoconsultant/bg4.jpg) 27% no-repeat; background-size: cover;}
+
+.slides {
+	width: 100%;
+	position: absolute;
+	visibility: hidden;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 3s ease-in-out;
+}
+
+[name=slider-group] {
+	display: none;
+}
+
+.slider__control {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: center;	
+	width: 100%;
+}
+
+.slider__control label {
+	display: inline-block;
+	position: relative;
+	border: 2px solid rgb(141, 141, 141);
+	height: 1em;
+	width: 1em;
+	margin: 15pt;
+	border-radius: 50%;
+	cursor: pointer;
+    transition: ease-in-out .2s;
+    background: #ddd;
+    &:hover {
+        background: rgba(252, 77, 2, 0.589);
+    }
+}
+
+input[type=radio]:checked + .slides {
+    transition: opacity 3s ease-in-out;
+    visibility: visible;
+}
+
+#slide1:checked ~ .slider__control #l1,
+#slide2:checked ~ .slider__control #l2,
+#slide3:checked ~ .slider__control #l3,
+#slide4:checked ~ .slider__control #l4,
+#slide5:checked ~ .slider__control #l5,
+#slide6:checked ~ .slider__control #l6 {
+    background: $orange;
+    border: 2px solid $orange;
+}
+
+@import './new-videoconsultanl.media.scss';  

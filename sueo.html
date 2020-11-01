@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Электронная очередь</title>
     
-    <!-- <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/sass/sueo.css">
-    
+    <link rel="stylesheet" href="styles/slick/slick.css">
+    <link rel="stylesheet" href="styles/slick//slick-theme.css">    
      
-</head>
+</head>  
 <body>
     <div class="container">
         <nav class="menu">
             <img class="menu__logo" src="./images/logo.svg" alt="">
+            <label for="menu__burger__check"><span class="menu__burger"></span></label>
+            <input type="checkbox" id="menu__burger__check">
             <ul class="menu__list">
                 <li><a href="./index.html">Главная</a></li>
                 <li class="menu__list__to-sub">Продукты
@@ -60,29 +63,24 @@
         </nav>
 
             <section class="sueo-1">
-                <!-- <svg width="0" height="0" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <clipPath id="clipPathSueoHeader"><path class="st0" d="M978,909.9c-334.4,3.2-791.3-86.3-978-131.5V0h1920v778.6C1743.7,821.1,1312.4,906.7,978,909.9z"></path></clipPath>
-                </svg> -->
                 <img src="./images/sueo/display.png" alt="">
                 <div class="sueo-1__top text-box">
                     <h3>Электронная очередь</h3>
                     <h2>Альфа-М</h2>
                     <p>Инновационные решения и многолетняя практика - гарантия успешных внедрений</p>
-               </div>
-                <div class="sueo-1__bottom">
-                    <div class="sueo-1__right">
-                        <h6>Основные составляющие системы</h6>
-                        <div class="sueo-1__nav-box">
-                            <p><a href="#sueo-3">Регистратор электронной очереди</a></p>
-                            <p>ПО оператора и администратора СУЭО</p>
-                            <p>Главное табло и табло оператора СУЭО</p>
-                            <p>Модуль мониторинга и отчетности</p>
-                            <p>Рекламно-информационный модуль</p>
-                            <p>Предварительная запись</p>
-                            <p><a href="#sueo-5">Система оценки качества (СОК)</a></p>
-                            <p><a href="#sueo-4">Система контроля качества работы (СККР)</a></p>
-                            <p><a href="#sueo-6">Единый сервер мониторинга (ЕСМ)</a></p>
-                        </div>
+                </div>
+                <div class="sueo-1__right">
+                    <h6>Основные составляющие системы</h6>
+                    <div class="sueo-1__nav-box">
+                        <p><a href="#sueo-3">Регистратор электронной очереди</a></p>
+                        <p>ПО оператора и администратора СУЭО</p>
+                        <p>Главное табло и табло оператора СУЭО</p>
+                        <p>Модуль мониторинга и отчетности</p>
+                        <p>Рекламно-информационный модуль</p>
+                        <p>Предварительная запись</p>
+                        <p><a href="#sueo-5">Система оценки качества (СОК)</a></p>
+                        <p><a href="#sueo-4">Система контроля качества работы (СККР)</a></p>
+                        <p><a href="#sueo-6">Единый сервер мониторинга (ЕСМ)</a></p>
                     </div>
                 </div>
             </section>
@@ -172,8 +170,8 @@
                 </div>
             </section>
 
+            <a name='sueo-3'></a>
             <section class="sueo-3 slyder">
-                <a name='sueo-3'></a>
                 <div class="slyder__top">
                     <h3>Варианты<span> регистратора</span></h3>
                 </div>
@@ -185,7 +183,28 @@
                         <div class="slyder__left__icon"> <div><img src="./images/icons/constructor.svg" alt=""></div> <p>Разработка терминала под Ваши задачи </p></div>
                     </div>
                     <div class="slyder__center">
-
+                        <div class="slider__content slider">
+                            <div class="slider__item">
+                                <img src="./images/sueo/alfamat.png" alt="">
+                            </div>
+                            <div class="slider__item">
+                                <img src="./images/sueo/kafedra.png" alt="">
+                            </div>
+                            <div class="slider__item">
+                                <img src="./images/sueo/sueo2.png" alt="">
+                            </div>           
+                        </div>
+                        <div class="slider__contorls slider">
+                            <div class="slider__item__control">
+                                <img src="./images/sueo/alfamat.png" alt="">
+                            </div>
+                            <div class="slider__item__control">
+                                <img src="./images/sueo/kafedra.png" alt="">
+                            </div>
+                            <div class="slider__item__control">
+                                <img src="./images/sueo/sueo2.png" alt="">
+                            </div>  
+                        </div>
                     </div>
                     <div class="slyder__right">
                         <p>Собственное конструкторское бюро</p>
@@ -196,8 +215,8 @@
                 </div>
             </section>
 
+            <a name='sueo-4'></a>
             <section class="sueo-4">
-                <a name='sueo-4'></a>
                 <h3>Система контроля качества работы <span>(СККР)</span></h3>
                 <p>Ведется мониторинг качества обслуживания и запись разговора c помощью веб-камеры, оборудованной микрофоном, на рабочем месте оператора</p>
 
@@ -209,8 +228,8 @@
                 </div>
             </section>
 
+            <a name='sueo-5'></a>
             <section class="sueo-5">
-                <a name='sueo-5'></a>
                 <div class="sueo-5__top">
                     <h3>Система оценки качества <span>(СОК)</span></h3>
                     <p>Инструмент независимой оценки качества обслуживания и получения обратной связи на основе опросов клиентов</p>
@@ -229,8 +248,8 @@
                 </div>             
             </section>
 
+            <a name='sueo-6'></a>
             <section class="sueo-6">
-                <a name='sueo-6'></a>
                 <div class="sueo-6__top">
                     <h3>Единый сервер мониторинга <span>(ЕСМ)</span></h3>
                     <p>ЕСМ собирает полную информацию по обслуживанию клиентов со всех филиалов в единую базу. Позволяет анализировать данные по обслуженным клиентам, управлять очередями в филиалах, и получать отчетность по работе не только каждого центра, но и каждого сотрудника.</p>
@@ -279,7 +298,10 @@
     </div>
 
     <script src="./scripts/anim.js"></script>
-    <script src="./scripts/slyder.js"></script>
     <script src="./scripts/menu.js"></script>
+
+   <script src="scripts/jquery3.5.1.js"></script>
+   <script src="scripts/slick.min.js"></script>
+   <script src="scripts/carousel.js"></script>
 </body>
 </html>

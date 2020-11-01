@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ввод данных</title>
     
-    <!-- <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/sass/alpha-vd.css">
-    
+    <link rel="stylesheet" href="styles/slick/slick.css">
+    <link rel="stylesheet" href="styles/slick//slick-theme.css">    
     
 </head>
 <body>
     <div class="container">
         <nav class="menu">
             <img class="menu__logo" src="./images/logo.svg" alt="">
+            <label for="menu__burger__check"><span class="menu__burger"></span></label>
+            <input type="checkbox" id="menu__burger__check">
             <ul class="menu__list">
                 <li><a href="./index.html">Главная</a></li>
                 <li class="menu__list__to-sub">Продукты
@@ -60,42 +63,44 @@
         </nav>
     
             <section class="alpha-vd-1">
-                <h3>Автоматизированная система ввода данных</h3>
-                <h2> АЛЬФА-ВД</h2>
+                <h3 class="_anim-items _anim-show-top">Автоматизированная система ввода данных</h3>
+                <h2 class="_anim-items _anim-show-bottom"> АЛЬФА-ВД</h2>
             </section>
+
             <section class="alpha-vd-2">
                 <h3><span>Алгоритм </span>работы системы</h3>
                 <div class="alpha-vd-2__content">
-                    <div class="alpha-vd-2__item">
+                    <div class="alpha-vd-2__item _anim-items _anim-show-bottom _anim-no-hide">
                         <div class="alpha-vd-2__item__num">1</div>
                         <p>Абонент выбирает на регистраторе электронной очереди «Ввод показаний»</p>
                     </div>
-                    <div class="alpha-vd-2__item">
+                    <div class="alpha-vd-2__item _anim-items _anim-show-bottom _anim-no-hide">
                         <div class="alpha-vd-2__item__num">2</div>
                         <p>Абонент выбирает метод авторизации по номеру ЛС, телефона или по адресу</p>
                     </div>
-                    <div class="alpha-vd-2__item">
+                    <div class="alpha-vd-2__item _anim-items _anim-show-bottom _anim-no-hide">
                         <div class="alpha-vd-2__item__num">3</div>
                         <p>В зависимости от выбора, Абонент подтвержает свою личность и нажимает «далее»</p>
                     </div>
-                    <div class="alpha-vd-2__item">
+                    <div class="alpha-vd-2__item _anim-items _anim-show-bottom _anim-no-hide">
                         <div class="alpha-vd-2__item__num">4</div>
                         <p>Проверка правильности ввода данных Абонентом, путем обращения к базе данных</p>
                     </div>
-                    <div class="alpha-vd-2__item">
+                    <div class="alpha-vd-2__item _anim-items _anim-show-bottom _anim-no-hide">
                         <div class="alpha-vd-2__item__num">5</div>
                         <p>Ввод показаний Абонентом</p>
                     </div>
-                    <div class="alpha-vd-2__item">
+                    <div class="alpha-vd-2__item _anim-items _anim-show-bottom _anim-no-hide">
                         <div class="alpha-vd-2__item__num">6</div>
                         <p>Проверка правильности ввода показаний Абонентом посредством экрана</p>
                     </div>
-                    <div class="alpha-vd-2__item">
+                    <div class="alpha-vd-2__item _anim-items _anim-show-bottom _anim-no-hide">
                         <div class="alpha-vd-2__item__num">7</div>
                         <p>Отправка введенных показаний Абонентом</p>
                     </div>
                 </div>
             </section>
+
             <section class="alpha-vd-3 slyder">
                 <div class="slyder__top">
                     <h3>Варианты<span> терминала</span></h3>
@@ -108,7 +113,28 @@
                         <div class="slyder__left__icon"> <div><img src="./images/icons/constructor.svg" alt=""></div> <p>Разработка терминала под Ваши задачи </p></div>
                     </div>
                     <div class="slyder__center">
-
+                        <div class="slider__content slider">
+                            <div class="slider__item">
+                                <img src="./images/sueo/alfamat.png" alt="">
+                            </div>
+                            <div class="slider__item">
+                                <img src="./images/sueo/kafedra.png" alt="">
+                            </div>
+                            <div class="slider__item">
+                                <img src="./images/sueo/sueo2.png" alt="">
+                            </div>           
+                        </div>
+                        <div class="slider__contorls slider">
+                            <div class="slider__item__control">
+                                <img src="./images/sueo/alfamat.png" alt="">
+                            </div>
+                            <div class="slider__item__control">
+                                <img src="./images/sueo/kafedra.png" alt="">
+                            </div>
+                            <div class="slider__item__control">
+                                <img src="./images/sueo/sueo2.png" alt="">
+                            </div>  
+                        </div>
                     </div>
                     <div class="slyder__right">
                         <p>Собственное конструкторское бюро</p>
@@ -120,7 +146,11 @@
             </section>
     </div>
 
-    <script src="./scripts/"></script>
-<script src="./scripts/menu.js"></script>
+    <script src="./scripts/anim.js"></script>
+    <script src="./scripts/menu.js"></script>
+
+   <script src="scripts/jquery3.5.1.js"></script>
+   <script src="scripts/slick.min.js"></script>
+   <script src="scripts/carousel.js"></script>
 </body>
 </html>     

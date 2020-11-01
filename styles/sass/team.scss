@@ -1,6 +1,6 @@
 @import 'menu.style.scss';
 
-h2 {
+h2 { 
     font-size: 48px;
     padding-bottom: 0;
     line-height: 1; 
@@ -36,7 +36,6 @@ h5 {
     align-items: center;
     justify-content: space-around;
     padding: 10vh 0 5vh;
-    overflow: hidden;
 }
 
 .team__photo {
@@ -61,4 +60,23 @@ h5 {
         text-align: right;
     }
    
+}
+
+@media (max-width: 1023px) {
+    .container {
+        padding: 6vh 0 6vh;
+    }
+    
+    .team__photo {
+        height: max-content;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    .team__name {
+        h2 { font-size: 36px;}
+        h6 { font-size: 36px; margin: 1vh 0;}
+        h5 { font-size: 30px;}
+    }
 }

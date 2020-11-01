@@ -1,0 +1,39 @@
+@media (max-width: 1023px) {
+    .gendarme-1 {
+        background: url(../../images/gendarme/header.jpg) 55% no-repeat;
+        background-size: cover;
+
+        &__right {
+            width: 50vw;
+            margin-left: 40vw;
+        }
+    }
+
+    .gendarme-2 {
+        height: 115vh;
+        padding: 5vh 5vw;
+        &__top {
+            height: 30vh;
+            p {
+                margin-top: -10vh;
+                margin-left: 2vw;
+            }
+        }
+        &__bottom {
+            img {
+                width: 30vw;
+                margin-top: -12vh;
+                margin-left: 5vw;
+                z-index: 1;
+            }
+            &__right {
+                h3 {text-align: right;}
+                margin-top: -10vh;
+                width: 50vw;
+            }
+            &__box__item p {
+                margin: .5vh 0; 
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@media (max-width: 1023px) {
+  p {
+    text-align: left;
+  }
+  .monolit-1__left {
+    background: url(../../images/monolit/header.jpg) -80vw no-repeat;
+    background-size: cover;
+  }
+  .monolit-1__right {
+    width: 65vw;
+  }
+  .monolit-2__bottom__item {
+    width: 20vw;
+  }
+  .monolit-2__bottom__item p {
+    font-weight: 500;
+  }
+  .monolit-3 {
+    height: 150vh;
+  }
+  .monolit-3 h3 {
+    font-size: 30px;
+  }
+  .monolit-3 h2 {
+    font-size: 24px;
+    padding-bottom: 8px;
+  }
+  .monolit-3__item:first-child {
+    top: 20%;
+  }
+  .monolit-3__item:nth-child(2) {
+    top: 29%;
+  }
+  .monolit-3__item:nth-child(3) {
+    top: 39%;
+  }
+  .monolit-3__item:nth-child(4) {
+    top: 60%;
+  }
+  .monolit-3__item:nth-child(5) {
+    top: 68%;
+  }
+  .monolit-3__item:nth-child(6) {
+    top: 75%;
+  }
+}
+/*# sourceMappingURL=monolit.media.css.map */

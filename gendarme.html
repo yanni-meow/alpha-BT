@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Жандарм</title>
     
-    <!-- <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/sass/gendarme.css">
     
     
@@ -14,6 +14,8 @@
     <div class="container">
         <nav class="menu">
             <img class="menu__logo" src="./images/logo.svg" alt="">
+            <label for="menu__burger__check"><span class="menu__burger"></span></label>
+            <input type="checkbox" id="menu__burger__check">
             <ul class="menu__list">
                 <li><a href="./index.html">Главная</a></li>
                 <li class="menu__list__to-sub">Продукты
@@ -80,13 +82,11 @@
 
         <section class="gendarme-2">
             <div class="gendarme-2__top">
-                <img src="./images/gendarme/monitor.png" alt="">
-                <div class="regulation">
-                    <input type="range" id="rotate" min="-90" max="90" class="regulation-point" value="0">
-                    <div class="regulation-degree">
-                        <span>0</span>° 
-                    </div>
-                </div>
+                <img id="toRotate" src="./images/gendarme/monitor.png" alt="">
+                <form class="regulation" oninput="degrees.value = rotatePoint.valueAsNumber">
+                    <input type="range" class="regulation-point" id="rotatePoint" min="-90" max="90" value="0">
+                    <output name="degrees" for="rotatePoint">0</output></span>° 
+                </form>
                 <p class="_anim-items _anim-show-right">Регулируйте угол поворота экрана, так как<span> Вам удобно</span></p>
             </div>
             <div class="gendarme-2__bottom">

@@ -1,19 +1,15 @@
 @import 'menu.style.scss';
-
-.container {
-    overflow: hidden;
-} 
  
 h1, h2, h3, h4 {text-align: center;}
-
-.alpha-mat-1 {
+   
+.alpha-mat-1 {  
     height: 100vh;
     width: 100vw;
     padding: 15vh 5vw;
     background: url(../../images/alpha-mat/header.jpg) center;
     background-size: cover;
-}
-
+} 
+ 
 .alpha-mat-2 {
     height: 100vh;
     width: 100vw;
@@ -23,10 +19,26 @@ h1, h2, h3, h4 {text-align: center;}
     align-items: center;
     justify-content: center;
     h3 {width: 100vw;}
-    &__left {
-        width: 48vw;
+    &__left {  
+        width: 48vw;   
         height: 60vh;
         margin-right: 3vw;
+        &__content {  
+            // margin-top: -2vh;
+            // max-height: 40vh;
+            // img {
+            //     max-height: 40vh;
+            //     width: auto;
+            // }
+        }     
+        &__controls {
+            margin-top: 2vh;
+            max-height: 20vh;
+            img {
+                max-height: 20vh;   
+                width: auto;
+            }   
+        }
     }
     &__right {
         width: 35vw;
@@ -91,4 +103,5 @@ h1, h2, h3, h4 {text-align: center;}
         }
     }
 }
-
+   
+@import './alpha-mat.media.scss';     

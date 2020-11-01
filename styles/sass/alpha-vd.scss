@@ -1,9 +1,5 @@
 @import 'menu.style.scss';
-
-.container {
-    overflow: hidden;
-}
-
+    
 h2 {text-align: center;}
 
 h3 {
@@ -21,7 +17,7 @@ p {
     margin-bottom: 2vh;
     text-align: left;
 }
-
+ 
 .alpha-vd-1 {
     height: 100vh;
     padding: 15vh 5vw;
@@ -88,7 +84,9 @@ p {
         &:nth-child(6)::after { top: -32%; left: auto; right: -15%;};
         &:nth-child(7)::after { top: -35%; left: auto; right: -15%;};
     }
-}
+} 
 
 .alpha-vd-3 {
 }
+
+@import './alpha-vd.media.scss';

@@ -101,12 +101,13 @@ h2, h3 {
             height: 65vh;
             width: auto;
             margin-left: -3vw;
+            z-index: 5;
         }
 
         &__box {
             width: 77vw;
             display: inline-grid;
-            grid-template-columns: repeat(7, 1fr);
+            grid-template-columns: repeat(7, 11vw);
             grid-template-rows: repeat(2, 28vh);
             grid-template-areas:
                 "one one six two three four"
@@ -133,12 +134,13 @@ h2, h3 {
             &:last-child {grid-area: ten; background: rgb(239, 245, 255);}
 
             h6 {
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: 400;
                 margin: 0 auto;
                 text-align: center;
-                text-transform: uppercase;
-                padding: 3px;
+                word-wrap: break-word;
+                // text-transform: uppercase;
+                padding: 2px;
                 opacity: 1;
             }
             p {
@@ -149,7 +151,7 @@ h2, h3 {
                 background-color: $textColor;
                 display: flex;
                 align-items: center;
-                font-size: 14px;
+                font-size: 12px;
                 text-align: center;
                 padding: 3px;
                 margin: 0;
@@ -206,21 +208,35 @@ h2, h3 {
     }
 }
 
+#gran {
+    position: absolute;
+    z-index: 3;
+    width: 100vw;
+    height: 55vh;
+    top: 0;
+    left: 0%;
+}  
+
 .portal-4 {
     height: 100vh;
     padding: 5vh 5vw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    position: relative;
+    z-index: 5;
+    background: linear-gradient(rgb(255, 246, 242) 0%, rgba(255, 246, 242, 0) 89.93%);
 
     &__top {
         text-align: center;
         width: 100%;
+        z-index: 5;
     }
 
     &__left {
         width: 22vw;
         padding-right: 2vw;
+        z-index: 5;
         p {
             text-align: right;
             padding-bottom: 2vh;
@@ -232,16 +248,19 @@ h2, h3 {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+
         img {
-            clip-path: url(#clipControlArea);
+            z-index: 1;
             max-width: 100%;
-            max-height: 75vh;
+            max-height: 70vh;
         }
     }
 
     &__right {
         width: 22vw;
         padding-left: 2vw;
+        z-index: 5;
         p {
             text-align: left;
             padding-bottom: 2vh;
@@ -249,17 +268,77 @@ h2, h3 {
     }
 }
 
-#qr {}
-#printer {}
-#secMonitor {}
-#sensBtn {}
-#cameraHD {}
-#payPass {}
-#photoScan {}
-#cardRider {}
-#pinPad {}
-#cash {}
-#phone {}
+.view-box {
+    padding: 0px;
+    position: absolute;
+    transition: all 0.15s ease-out 0s;
+    border-radius: 3px;
+    box-shadow: none;
+    z-index: 10;
+}
+
+.view { box-shadow: rgb(255, 245, 233) 0px 0px 3px, rgb(252, 76, 2) 0px 0px 10px;}
+
+#qr-box {
+    width: 3vw;
+    height: 3vw;
+    top: 16vh;
+    right: 7.5vw;
+}
+#printer-box {
+    width: 12vw;
+    height: 1.4vh;
+    top: 21vh;
+}
+#secMonitor-box {
+    width: 18vw;
+    height: 16vh;
+    top: 27vh;
+}
+#sensBtn-box {
+    width: 18vw;
+    height: 6vh;
+    top: 42.5vh;
+}
+#cameraHD-box {
+    width: 4vw;
+    height: 4vw;
+    top: 13vh;
+}
+#payPass-box {
+    width: 6vh;
+    height: 6vh;
+    top: 40vh;
+    right: 6.5vw;
+}
+#photoScan-box {
+    width: 12vw;
+    height: 8.5vh;
+    top: 50vh;
+}
+#cardRider-box {
+    width: 5vw;
+    height: 5vh;
+    right: 6vw;
+    top: 35vh;
+}
+#pinPad-box {
+    width: 9vw;
+    height: 8vh;
+    right: 6vh;
+    top: 27vh;
+}
+#cash-box {
+    width: 5vw;
+    height: 2vh;
+    bottom: 13vh;
+    right: 5.5vw;
+}
+#phone-box {
+    width: 5vw;
+    height: 20vh;
+    left: 6.8vw;
+}
 
 .portal-5 {
     height: 95vh;
@@ -308,3 +387,5 @@ h2, h3 {
         }
     }
 }
+
+@import 'portal2.media.scss';        

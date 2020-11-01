@@ -1,0 +1,64 @@
+@media (max-width: 1023px) {
+  .new-video-1 {
+    background: url(../../images/new-videoconsultant/header.jpg) 37% no-repeat;
+    background-size: cover;
+  }
+  .new-video-2__bottom {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .new-video-2__bottom__item {
+    width: 25vw;
+  }
+  .new-video-3 {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .new-video-3__top {
+    margin-bottom: 2vh;
+  }
+  .new-video-3__item {
+    width: 80vw;
+  }
+  .new-video-3__item img {
+    margin-right: 2vw;
+  }
+  .new-video-4 {
+    background: url(../../images/new-videoconsultant/bg3.png) 75vw;
+  }
+  .new-video-4__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .new-video-4__bottom {
+    max-width: 90vw;
+  }
+  .new-video-4__left, .new-video-4__right {
+    width: 65vw;
+  }
+  .new-video-5__right img {
+    width: 110%;
+  }
+  .new-video-6__content {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  .slyde1 h3, .slyde2 h3 {
+    max-width: 50vw;
+    text-align: right;
+  }
+  .slyde3 {
+    background: url(../../images/new-videoconsultant/bg4.jpg) 32% no-repeat;
+    background-size: cover;
+  }
+}
+/*# sourceMappingURL=new-videoconsultanl.media.css.map */

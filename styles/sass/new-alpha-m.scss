@@ -1,7 +1,6 @@
 @import 'menu.style.scss';
 
 .container {
-    overflow: hidden;
     padding-top: 5vh;
 }
 
@@ -31,13 +30,12 @@ p {
         font-size: 20px;
     }
 }
-
-
+        
 .alpha-m-1 {
     height: 95vh;
     width: 100vw;
     padding: 5vh 5vw;
-
+       
     background: url(../../images/new-alpha-m/header.jpg) 25%;
     background-size: cover;
 
@@ -320,3 +318,5 @@ p {
         }
     }
 }
+
+@import './new-alpha-m.media.scss';

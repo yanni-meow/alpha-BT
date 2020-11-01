@@ -1,0 +1,95 @@
+@media (max-width: 1023px) {
+  .web-const-1 {
+    background-size: 180% auto;
+  }
+  .web-const-2 {
+    padding: 5vh 5vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .web-const-2 h3 {
+    padding-bottom: 0;
+  }
+  .web-const-2__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .web-const-2__top img {
+    width: 60vw;
+  }
+  .web-const-2__top ul {
+    max-width: 80vw;
+    margin-left: 5vw;
+  }
+  .web-const-3 {
+    background-size: cover;
+    padding-top: 10vh;
+  }
+  .web-const-3 p {
+    max-width: 60vw;
+  }
+  .web-const-3__item-box {
+    height: 35vw;
+    width: 35vw;
+  }
+  .web-const-3__item-box:first-child {
+    top: 32vh;
+    left: 4vw;
+  }
+  .web-const-3__item-box:nth-child(2) {
+    top: 55vh;
+  }
+  .web-const-3__item-box:last-child {
+    top: 32vh;
+    right: 4vw;
+  }
+  .web-const-4__top {
+    width: 100vw;
+    height: 45vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .web-const-4__top img {
+    width: 25vw;
+  }
+  .web-const-4__top__box {
+    width: 65vw;
+  }
+  .web-const-4__bottom {
+    height: 45vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: -webkit-gradient(linear, left top, right top, from(#1d2a3e), to(#979ca3));
+    background: linear-gradient(to right, #1d2a3e, #979ca3);
+  }
+  .web-const-4__bottom__left, .web-const-4__bottom__right {
+    width: 90vw;
+  }
+  .web-const-5__content {
+    position: relative;
+    overflow: hidden;
+  }
+  .web-const-5__content img {
+    position: absolute;
+    max-width: 50vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 1;
+    opacity: .2;
+  }
+  .web-const-6__item {
+    word-wrap: break-word;
+    width: 40vw;
+  }
+}
+/*# sourceMappingURL=web-consultant.media.css.map */

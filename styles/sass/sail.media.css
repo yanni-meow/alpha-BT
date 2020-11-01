@@ -1,0 +1,52 @@
+@media (max-width: 1023px) {
+  .sail-1 {
+    background: url(../../images/sail/header.jpg) 120vw;
+  }
+  .sail-1__left p {
+    color: #fff;
+  }
+  .sail-2 {
+    height: 100vh;
+    padding: 5vh 5vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sail-2__box {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .sail-2__box img {
+    max-width: 15%;
+    padding: 3vh 0;
+  }
+  .sail-3 {
+    background: url(../../images/sail/gran-sail2.png) no-repeat top, url(../../images/sail/black-white.jpg) no-repeat center bottom;
+    background-size: auto 90%, auto 80%;
+  }
+  .sail-3__left {
+    margin-right: 15vw;
+    max-width: 25vw;
+  }
+  .sail-3__right {
+    margin-left: 15vw;
+    max-width: 25vw;
+  }
+  .sail-4 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sail-4__bottom {
+    margin-top: 3vh;
+  }
+}
+/*# sourceMappingURL=sail.media.css.map */

@@ -1,5 +1,5 @@
 @import 'menu.style.scss';
-
+ 
 .container {
     display: flex;
     flex-direction: column;
@@ -59,6 +59,29 @@ p {
             height: 10vh;
             width: 13vw;
             margin: 10px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .contacts {
+        &__box {
+            div {
+                width: 25vw;
+                p { text-align: left;}
+            }
+        }
+    }
+
+    #contacts__map {
+        width: 60vw;
+    }
+
+    .customers {
+        height: max-content;
+        h3 { padding: 2vh 0;}
+        &__box {
+            img { width: 24vw;}
         }
     }
 }

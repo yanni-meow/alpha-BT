@@ -1,0 +1,91 @@
+@media (max-width: 1023px) {
+  .portal-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portal-1__left {
+    width: 100vw;
+    height: 40vh;
+    margin-left: 0;
+    margin-top: 55px;
+  }
+  .portal-1__left img {
+    max-height: 40vh;
+    width: auto;
+  }
+  .portal-1__right {
+    width: 80vw;
+    margin-left: 5vw;
+  }
+  .portal-1__right ul {
+    margin-left: 3vw;
+  }
+  .portal-2__top {
+    margin: 2vw 0;
+  }
+  .portal-2__bottom {
+    height: 70vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portal-2__bottom__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portal-2__bottom__item {
+    height: 6.7vh;
+  }
+  .portal-3__left {
+    width: 70vw;
+    margin: 0 auto;
+  }
+  .portal-3__left p {
+    width: 100%;
+  }
+  .portal-3__box p {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #gran {
+    width: 130vw;
+    height: 80vh;
+    left: -30%;
+  }
+  .portal-4__left {
+    display: none;
+  }
+  .portal-4__middle {
+    width: 65vw;
+    top: -4vh;
+  }
+  .portal-4__right {
+    width: 25vw;
+    top: 0;
+  }
+  .portal-5 {
+    position: relative;
+  }
+  .portal-5__left {
+    width: 90vw;
+  }
+  .portal-5__right {
+    position: absolute;
+    right: 3vw;
+  }
+  .portal-5__right img {
+    opacity: .2;
+  }
+}
+/*# sourceMappingURL=portal2.media.css.map */

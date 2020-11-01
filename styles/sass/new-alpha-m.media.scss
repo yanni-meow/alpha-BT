@@ -1,0 +1,64 @@
+@media (max-width: 1023px) {
+
+    .alpha-m-1 {
+        background: url(../../images/new-alpha-m/header.jpg) 43%;
+        background-size: cover;
+    }
+
+    .alpha-m-2 {
+        &__top {
+            &__box {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+        &__bottom {
+            &__list {
+                max-width: 250px;
+                p { padding-bottom: 0;}
+            }
+        }
+    }
+
+    .alpha-m-4 {
+        &__box {
+            width: 90vw;
+
+            &__img {
+                img {width: 70%;}
+            }
+        }
+        &__text {
+            width: 60vw;
+            p {
+                margin: 1vh;
+                padding: 0;
+            }
+        }
+    }
+
+    .alpha-m-5 {
+        height: max-content;
+        &__content {
+            flex-direction: column;
+
+        }
+        &__left {
+            width: 90vw;
+            &__text {
+                max-width: 90vw !important;
+            }
+        }
+        &__right {
+            width: 90vw;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            div {
+                flex: 1;
+                margin: 0 1vw;
+                p {text-align: left;}
+            }
+        }
+    }
+}

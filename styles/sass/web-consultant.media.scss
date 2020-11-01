@@ -1,0 +1,88 @@
+@media (max-width: 1023px) {
+    .web-const-1 {
+        background-size: 180% auto;
+    }
+
+    .web-const-2 {
+        padding: 5vh 5vw;
+        justify-content: center;
+        h3 {padding-bottom: 0;}
+        &__top {
+            flex-direction: column;
+            img { width: 60vw;}
+            ul {
+                max-width: 80vw;
+                margin-left: 5vw;
+            }
+        }
+    }
+
+    .web-const-3 {
+        background-size: cover;
+        padding-top: 10vh;
+        p { max-width: 60vw;}
+
+        &__item-box {
+            height: 35vw;
+            width: 35vw;
+            &:first-child {
+                top: 32vh;
+                left: 4vw;
+            }
+            &:nth-child(2) {
+                top: 55vh;
+            }
+            &:last-child {
+                top: 32vh;
+                right: 4vw;
+            }
+        }
+    }
+
+    .web-const-4 {
+
+        &__top {
+            width: 100vw;
+            height: 45vh;
+            display: flex;
+            align-items: center;
+            
+            img { width: 25vw;}
+            &__box {
+                width: 65vw;
+            }
+        }
+
+        &__bottom {
+            height: 45vh;
+            flex-direction: column;
+            background: linear-gradient(to right, rgb(29, 42, 62), rgb(151, 156, 163));
+            &__left, 
+            &__right {
+                width: 90vw;
+            }
+        }
+    }
+
+    .web-const-5 {
+        &__content {
+            position: relative;
+            overflow: hidden;
+            img {
+                position: absolute;
+                max-width: 50vw;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+                opacity: .2;
+            }
+        }
+    }
+
+    .web-const-6 {
+        &__item {
+            word-wrap: break-word;
+            width: 40vw;
+        }
+    }
+}

@@ -4,72 +4,83 @@
 .container {
     position: relative;
     overflow: hidden;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
 }
 
 h6 {
     font-size: 16px;
 }
 
-.scroll-nav {
-    position: fixed;
-    z-index: 2;
-    top: 50%;
-    right: 50px;
-    transform: translateY(-50%);
+.menu__logo { opacity: 0;}
 
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 7px;
-    color: #fff;
-    width: 50px;
-    height: 200px;
-
-    
-    ul {
-        margin-left: 5px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-        transition: transform 200ms ease-out 0s;
-            
-        #pointer {
-            position: absolute;
-            width: 29px;
-            height: 29px;
-            border-radius: 50%;
-            transition: all 0.15s ease-out 0s;
-            background: rgb(252, 76, 2);
-            transform: translateY(-75px);
-            z-index: 3;
-        }
-
-        // transform: translateY(-75px);
-        // transform: translateY(-45px);
-        // transform: translateY(-15px);
-        // transform: translateY(15px);
-        // transform: translateY(45px);
-        // transform: translateY(75px);
-
-        li {
-            cursor: pointer;
-            padding: 8px 10px;
-            transition: all 0.15s ease-out 0s;
-            z-index: 4;
-            // &:hover {color: $orange;}
-            // &:active {
-            //     font-size: 18px;
-            // }
-        }
-    }
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    transition: 0.5s cubic-bezier(.1,.3,.33,.99);
 }
 
-.main {
-    height: 100vh;
+// .scroll-nav {
+//     position: fixed;
+//     z-index: 2;
+//     top: 50%;
+//     right: 50px;
+//     transform: translateY(-50%);
+
+//     background: rgba(0, 0, 0, 0.7);
+//     border-radius: 7px;
+//     color: #fff;
+//     width: 50px;
+//     height: 200px;
+                
+    
+//     ul {
+//         margin-left: 5px;
+//         height: 100%;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         position: relative;
+//         transition: transform 200ms ease-out 0s;
+            
+//         #pointer {
+//             position: absolute;
+//             width: 29px;
+//             height: 29px;
+//             border-radius: 50%;
+//             transition: all 0.15s ease-out 0s;
+//             background: rgb(252, 76, 2);
+//             transform: translateY(-75px);
+//             z-index: 3;
+//         }
+
+//         // transform: translateY(-75px);
+//         // transform: translateY(-45px);
+//         // transform: translateY(-15px);
+//         // transform: translateY(15px);
+//         // transform: translateY(45px);
+//         // transform: translateY(75px);
+
+//         li {
+//             cursor: pointer;
+//             padding: 8px 10px;
+//             transition: all 0.15s ease-out 0s;
+//             z-index: 4;
+//             // &:hover {color: $orange;}
+//             // &:active {
+//             //     font-size: 18px;
+//             // }
+//         }
+//     }
+// }
+  
+.slyde-1 { 
+    height: 100vh; 
     background: url(../../images/index/main.jpg) no-repeat 45vw;
     background-size: auto 90%;
-
-    position: relative;
+    position: relative;    
+    scroll-snap-align: start; 
 
     &__logo {
         position: absolute; 
@@ -78,8 +89,7 @@ h6 {
         left: 200px;
         width: 206.308px;
         z-index: 1;
-    }   
-
+    }     
 
     &__text {
         display: inline-block;
@@ -96,13 +106,14 @@ h6 {
         line-height: 1.6;
         padding: 25px;
     }
-}
-
+}  
+  
 .slyde-2 {
     height: 100vh;
     background: url(../../images/index/slyde-2.png) bottom no-repeat, rgb(239, 240, 240);
-    background-size: 100% auto;
+    background-size: 100% auto;  
     position: relative;
+    scroll-snap-align: start;
 
     &__box {
         position: absolute;
@@ -128,6 +139,7 @@ h6 {
     background: url(../../images/index/slyde-3.jpg) center;
     background-size: auto 100%;
     position: relative;
+    scroll-snap-align: start;
 
     &__box {
         position: absolute;
@@ -151,8 +163,8 @@ h6 {
     height: 100vh;
     background: url(../../images/index/slyde-4.jpg) center no-repeat;
     background-size: auto 100%;
-
     position: relative;
+    scroll-snap-align: start;
     
     &__box {
         position: absolute;
@@ -169,13 +181,14 @@ h6 {
         justify-content: space-around;
         text-align: right;
     }
-}
+}  
 
 .slyde-5 {
     height: 100vh;
     background: url(../../images/index/slyde-5.jpg) right;
     background-size: cover;
     position: relative;
+    scroll-snap-align: start;
 
     &__box {
         position: absolute;
@@ -199,8 +212,9 @@ h6 {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-
-    &__item {
+    scroll-snap-align: start;
+ 
+    &__item {  
         width: 32vw;
         height: 45vh;
         padding: 30px 10px;
@@ -222,3 +236,5 @@ h6 {
     
     }
 }
+
+@import './index.media.scss';

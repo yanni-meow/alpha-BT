@@ -1,4 +1,13 @@
-// АНИМАЦИЯ при прокрутке
+// прокрутка целой секции странцы
+
+// let container = document.querySelector('.container');
+// const scrolling = () => {
+//     const height = window.innerHeight;
+//     container.style.transform = `translateY${height}`;
+// }
+// document.body.addEventListener('scroll', scrolling);
+
+// всплывающие объекты при прокрутке
 
 const animItems = document.querySelectorAll('._anim-items');
 
@@ -39,3 +48,15 @@ if (animItems.length > 0) {
         animOnScroll()
     }, 300);
 }
+
+// поворот экрана gendarme по input range
+
+const toRotate = document.getElementById('toRotate');
+const rotatePoint = document.getElementById('rotatePoint');
+
+function setRotate(e) {
+    console.log('toRotate === ', toRotate);
+    toRotate.style.transform = `rotate(${e.target.value}deg`;
+} 
+rotatePoint.addEventListener('mousemove', setRotate);
+rotatePoint.addEventListener('touchmove', setRotate)

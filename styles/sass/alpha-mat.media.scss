@@ -1,0 +1,17 @@
+@media (max-width: 1023px) {
+    .alpha-mat-2 {
+        &__left__controls img {
+            max-width: 15vw;
+        }
+        &__right__box {
+
+        }
+        &__icon {
+            p { 
+                text-align: left;
+                margin-left: 1vw;
+                width: 30vw;
+            }
+        }
+    }
+} 

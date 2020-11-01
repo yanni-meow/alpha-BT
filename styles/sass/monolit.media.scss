@@ -1,0 +1,42 @@
+@media (max-width: 1023px) {
+
+    p { text-align: left;}
+
+    .monolit-1 {
+        &__left {
+            background: url(../../images/monolit/header.jpg) -80vw no-repeat;
+            background-size: cover;
+        }
+        &__right {
+            width: 65vw;
+        }
+    }
+ 
+    .monolit-2 {
+        &__bottom {
+            &__item {
+                width: 20vw;
+                p { font-weight: 500;}
+            }
+        }
+    }
+
+    .monolit-3 {
+        height: 150vh;
+        h3 {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 24px;
+            padding-bottom: 8px;
+        }
+        &__item {
+            &:first-child {top: 20%;}
+            &:nth-child(2) {top: 29%;}
+            &:nth-child(3) {top: 39%;}
+            &:nth-child(4) {top: 60%;}
+            &:nth-child(5) {top: 68%;}
+            &:nth-child(6) {top: 75%;}
+        }
+    }
+}

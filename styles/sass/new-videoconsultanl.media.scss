@@ -1,0 +1,65 @@
+@media (max-width: 1023px) {
+    .new-video-1 {
+        background: url(../../images/new-videoconsultant/header.jpg) 37% no-repeat;
+        background-size: cover;
+    }
+
+    .new-video-2 {
+        &__bottom {
+            justify-content: center;
+            &__item {
+                width: 25vw;
+            }
+        }
+    }
+
+    .new-video-3 {
+        height: max-content;
+        &__top { margin-bottom: 2vh;}
+        &__item {
+            width: 80vw;
+            img {
+                margin-right: 2vw;
+            }
+        }
+    }
+
+    .new-video-4 {
+        background: url(../../images/new-videoconsultant/bg3.png) 75vw;
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        &__bottom {
+            max-width: 90vw;
+        }
+        &__left, &__right {
+            width: 65vw;
+        }
+    }
+
+    .new-video-5 {
+        &__right {
+            img {width: 110%;}
+        }
+    }
+
+    .new-video-6 {
+        &__content {
+            background: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    .slyde1, .slyde2 {
+        h3 { 
+            max-width: 50vw;
+            text-align: right;
+        }
+    }
+
+    .slyde3 {
+        background: url(../../images/new-videoconsultant/bg4.jpg) 32% no-repeat;
+        background-size: cover;
+    }
+}
