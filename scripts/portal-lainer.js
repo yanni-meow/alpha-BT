@@ -16,24 +16,25 @@ viewList.forEach(element => {
 
 
 // анимация вертикалки при прокрутке
+if (window.width > 1023) {
+    const image = document.getElementById("letScroll");
+    let progress;
 
-const image = document.getElementById("letScroll");
-let progress;
+    const getCoords = () => {
+    const img = image.getBoundingClientRect();
+    const progressPX = img.top - 800 < window.pageYOffset - window.innerHeight / 2
+    progress = progressPX ? window.pageYOffset - window.innerHeight - 50 : progress
+    const p = progress / 800
 
-const getCoords = () => {
-  const img = image.getBoundingClientRect();
-  const progressPX = img.top - 800 < window.pageYOffset - window.innerHeight / 2
-  progress = progressPX ? window.pageYOffset - window.innerHeight - 50 : progress
-  const p = progress / 800
+    return { p };
+    }
 
-  return { p };
+    const onScroll = () => {
+        const view = getCoords(image.current)
+        const p = view.p > 1 ? 1 : view.p < 0 ? 0 : view.p
+
+        image.style.transform = `translateY(${window.innerHeight * p}px) translateX(${150*p}px) scale(${1 + .5*p})`
+    }
+
+    window.addEventListener('scroll', onScroll);
 }
-
-const onScroll = () => {
-    const view = getCoords(image.current)
-    const p = view.p > 1 ? 1 : view.p < 0 ? 0 : view.p
-
-    image.style.transform = `translateY(${window.innerHeight * p}px) translateX(${150*p}px) scale(${1 + .5*p})`
-}
-
-window.addEventListener('scroll', onScroll);

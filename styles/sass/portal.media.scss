@@ -74,6 +74,44 @@
         }
     }
 
+    #qr-box {
+        width: 3.5vw;
+        height: 2vw;
+        top: 11.5vh;
+        right: 10.6vw;
+    }
+    #printer-box {
+        width: 19vw;
+        height: 2vh;
+        top: 14.5vh;
+    }
+    #secMonitor-box {
+        width: 38vw;
+        height: 16.5vh;
+        top: 16vh;
+    }
+    #sensBtn-box {
+        width: 22vw;
+        height: 6vh;
+        top: 32vh;
+    }
+    #cameraHD-box {
+        width: 5.5vw;
+        height: 6vh;
+        top: 13vh;
+    }
+    #payPass-box {
+        width: 6vh;
+        height: 6vh;
+        top: 42.5vh;
+        right: 12vw;
+    }
+    #photoScan-box {
+        width: 12vw;
+        height: 8.5vh;
+        top: 51.5vh;
+    }
+
     .portal-5 {
         position: relative;
         &__left {
